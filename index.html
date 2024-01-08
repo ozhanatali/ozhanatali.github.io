@@ -81,3 +81,16 @@ title: Özhan Atalı
     <li><a href="http://github.com/mojombo/ernie/">Ernie:</a> Ruby/Erlang Hybrid BERT-RPC server.</li>
   </ul>
 </div>
+
+
+ <! –– _data usage : https://jekyllrb.com/docs/datafiles/  ––> 
+<ul>
+{% for member in site.data.members %}
+  <li>
+    <a href="https://github.com/{{ member.name }}">
+      {{ member.surname }}
+    </a>
+  </li>
+{% endfor %}
+</ul>
+
