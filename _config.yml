@@ -177,13 +177,13 @@ kramdown:
 collections:
   tech:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:title/ # title, path
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:path/ 
   talks:
     output: true
     permalink: /:collection/:path/
