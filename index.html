@@ -3,21 +3,21 @@ layout: default
 title: Özhan Atalı
 ---
 
-{% assign NotIncludedCategories = '' %}
+{% assign categories_tobe_listed = ''| split: '' %}
 {% for member in site.data.members %}
-   {% assign NotIncludedCategories = member.name %}
+   {% assign categories_tobe_listed = member.name | concat: categories_tobe_listed %}
 {% endfor %}
 
 
 <div id="home">
-  <h1>Blog Posts</h1>
+  <h1>Blog Posts-1</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 
- {% for subcat in NotIncludedCategories %}
+ {% for subcat in categories_tobe_listed %}
   <h1>{{subcat}}</h1>
   <ul class="posts">
      {% for post in site.categories[subcat] %}
