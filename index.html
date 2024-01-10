@@ -4,9 +4,8 @@ title: Özhan Atalı
 ---
 
 {% assign NotIncludedCategories = '' %}
-{% for collection in site.data.members %}
-   {% assign NotIncludedCategories = collection.name %}
-   {% break %}
+{% for member in site.data.members %}
+   {% assign NotIncludedCategories = member.name %}
 {% endfor %}
 
 
