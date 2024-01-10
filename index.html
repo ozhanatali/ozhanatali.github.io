@@ -17,7 +17,7 @@ title: Özhan Atalı
     {% endfor %}
   </ul>
 
-<! –– data klasöründeki kategorilerin ana sayfada otomatik listelenmesi  ––> 
+<! –– data klasöründeki kategorilerin ana sayfada listelenmesi  ––> 
    
  {% for subcat in anasayfakategorileri %}
  {% assign ilgilikategori = site.data.kategoriler | where:"kategori", subcat | first %}
@@ -29,34 +29,24 @@ title: Özhan Atalı
     {% endfor %}
   </ul>
  {% endfor %}
+
    
+<! –– tüm kategoriler  ––> 
    
  <h1>Kalem oynattığımız konular</h1>
    <ul class="posts">
    {% for cat in site.categories %}
-      <li></li><a href="https://ozhanatali.github.io/search?query={{ cat[0] }}" >{{ cat[0] }}</a>: {{ cat[1].size }} adet makale mevcut</li>
+      <li><a href="https://ozhanatali.github.io/search?query={{ cat[0] }}" >{{ cat[0] }}</a>: {{ cat[1].size }} adet makale mevcut</li>
    {% endfor %}
    </ul>
 
   
-  <h1>Noteworthy Open Source Projects and Specifications</h1>
-  <ul class="posts">
-    <li><a href="http://github.com/jekyll/jekyll/">Jekyll:</a> A simple, blog aware, static site generator (used for this site).</li>
-    <li><a href="http://semver.org">Semantic Versioning:</a> A meaningful method for incrementing version numbers.</li>
-    <li><a href="http://github.com/toml-lang/toml">TOML:</a> Tom's Obvious, Minimal Language.</li>
-    <li><a href="http://github.com/mojombo/god/">God:</a> Ruby process monitoring framework with easy extensibility.</li>
-    <li><a href="http://github.com/mojombo/chronic/">Chronic:</a> Ruby natural language date/time parser.</li>
-    <li><a href="http://tomdoc.org">TomDoc:</a> Code documentation for humans.</li>
-    <li><a href="http://github.com/mojombo/proxymachine/">ProxyMachine:</a> Layer 7 routing proxy in Ruby with Event Machine.</li>
-    <li><a href="http://github.com/github/gollum/">Gollum:</a> A simple, Git-powered wiki with a sweet API and local frontend.</li>
-    <li><a href="http://github.com/mojombo/grit/">Grit:</a> Object oriented Ruby bindings for Git (used by GitHub).</li>
-    <li><a href="http://github.com/mojombo/ernie/">Ernie:</a> Ruby/Erlang Hybrid BERT-RPC server.</li>
+<! –– data klasöründeki linklerin ana sayfada listelenmesi  ––> 
+
+<h1>Başucu Linkleri</h1>  
+    <ul class="posts">
+     {% for linkcik in site.data.linkler %}
+      <li><a href={{ linkcik.link }}> {{ linkcik.baslik }} </a>: {{ linkcik.aciklama }} </li>
+    {% endfor %}
   </ul>
-</div>
-
-
- <! –– _data usage : https://jekyllrb.com/docs/datafiles/  ––> 
- <! –– _data klasöründe members.csv dosyasında  ––> 
- <! –– name ve surname kolonlarına erişim örneği ––> 
-
 
