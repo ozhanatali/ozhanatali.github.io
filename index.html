@@ -20,7 +20,7 @@ title: Özhan Atalı
  {% for subcat in NotIncludedCategories %}
   <h1>{{subcat}}</h1>
   <ul class="posts">
-    {% for post in site.categories[subcat] %}
+    {% for post in site.categories[0][subcat] %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
