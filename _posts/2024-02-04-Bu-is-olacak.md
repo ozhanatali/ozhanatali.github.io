@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bu iş olacak
-category: Kitap
+category: kitap
 ---
 
 {{ page.title }}
