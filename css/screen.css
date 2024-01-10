@@ -35,17 +35,17 @@ p {
 }
 
 a {
-  color: #000;
+  color: #20b;
   text-decoration:none;
 }
 
 a:hover {
-  color: black;
+  color: #20b;
   text-decoration:underline;
 }
 
 a:visited {
-  color: #aaa;
+  color: #aaa1d6;
 }
 
 table {
