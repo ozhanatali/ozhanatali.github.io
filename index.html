@@ -3,22 +3,26 @@ layout: default
 title: Özhan Atalı
 ---
 
-{% assign categories_tobe_listed = ''| split: '' %}
-{% for member in site.data.members %}
-   {% assign categories_tobe_listed = member.name | concat: categories_tobe_listed %}
+{% assign anasayfakategorileri = ''| split: '' %}
+{% for ktgr in site.data.kategoriler %}
+   {% assign anasayfakategorileri = ktgr.kategori | concat: anasayfakategorileri %}
 {% endfor %}
 
 
 <div id="home">
-  <h1>Blog Posts</h1>
+  <h1>Blog Posts-1</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
 
- {% for subcat in categories_tobe_listed %}
+ {% for subcat in anasayfakategorileri %}
   <h1>{{subcat}}</h1>
+      {% for ktgr in site.data.kategoriler[subcat] %}
+         {% assign anasayfaaciklamasi = ktgr.aciklama %}
+         {{anasayfaaciklamasi}}
+      {% endfor %}
   <ul class="posts">
      {% for post in site.categories[subcat] %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
