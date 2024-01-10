@@ -10,7 +10,7 @@ title: Özhan Atalı
 
 
 <div id="home">
-  <h1>Blog Posts-6</h1>
+  <h1>Blog Posts-1</h1>
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -19,7 +19,7 @@ title: Özhan Atalı
 
  {% for subcat in anasayfakategorileri %}
   <h1>{{subcat}}</h1>
-      {% for ktgr in site.data.kategoriler | where:"kategori", subcat | first %}
+      {% for ktgr in site.data.kategoriler | where:"kategori", "zaza" | first %}
          {{ktgr.aciklama}}
       {% endfor %}
   <ul class="posts">
