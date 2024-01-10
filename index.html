@@ -19,7 +19,7 @@ title: Özhan Atalı
 
  {% for subcat in anasayfakategorileri %}
   <h1>{{subcat}}</h1>
-      {% for ktgr in site.data.kategoriler[subcat] %}
+      {% for ktgr in site.data.kategoriler[subcat][0] %}
          {{ktgr.aciklama}}
       {% endfor %}
   <ul class="posts">
