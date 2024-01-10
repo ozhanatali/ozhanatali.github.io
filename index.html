@@ -46,7 +46,7 @@ title: Özhan Atalı
 <h1>Başucu Linkleri</h1>  
     <ul class="posts">
      {% for linkcik in site.data.linkler %}
-      <li><a href={{ linkcik.link }}> {{ linkcik.baslik }} </a>: {{ linkcik.aciklama }} </li>
+      <li><a href={{ linkcik.link }} target="_blank" rel="noopener noreferrer"> {{ linkcik.baslik }} </a>: {{ linkcik.aciklama }} </li>
     {% endfor %}
   </ul>
 
