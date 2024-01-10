@@ -27,15 +27,10 @@ var WRInitTime=(new Date()).getTime();
 
 <div class="site">
   <div class="title">
-    <a href="/">Özhan Atalı</a>
-    <a class="extra" href="/">home</a>
+    <a href="/">Özhan Atalı</a>     
+</div>
 
-   {% for cat in site.categories %}
-      <a class="extra" href="{{ cat[0].url }}" >{{ cat[0] }}</a></li>
-   {% endfor %}
-     
-  </div>
-
+   
   {{ content }}
 
   <div class="footer">
