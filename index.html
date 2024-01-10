@@ -17,6 +17,8 @@ title: Özhan Atalı
     {% endfor %}
   </ul>
 
+<! –– data klasöründeki kategorilerin ana sayfada otomatik listelenmesi  ––> 
+   
  {% for subcat in anasayfakategorileri %}
   <h1>{{subcat}}</h1>
       {% assign ilgilikategori = site.data.kategoriler | where:"kategori", subcat | first %}
