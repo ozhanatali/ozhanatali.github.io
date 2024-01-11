@@ -5,7 +5,7 @@ title: Özhan Atalı
 
 {% assign anasayfakategorileri = ''| split: '' %}
 {% for ktgr in site.data.kategoriler %}
-   {% assign anasayfakategorileri = ktgr.kategori | concat: anasayfakategorileri %}
+   {% assign anasayfakategorileri = ktgr.kategori | concat: anasayfakategorileri | sort: ktgr.size %}
 {% endfor %}
 
 
@@ -65,7 +65,7 @@ title: Özhan Atalı
   </ul>
 
 <! –– data klasöründeki kategorilerin ana sayfada listelenmesi  ––> 
-   
+
  {% for subcat in anasayfakategorileri %}
  {% assign ilgilikategori = site.data.kategoriler | where:"kategori", subcat | first %}
   <h1>{{ilgilikategori.baslik}}</h1>    
