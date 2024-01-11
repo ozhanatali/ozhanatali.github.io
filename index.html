@@ -43,7 +43,8 @@ title: Özhan Atalı
  <h1>Hangi ana konularda yazmışım:</h1>
    <ul class="posts">
    {% for cat in site.categories %}
-   {% assign sorted_cat=cat| append: cat.docs.size %}
+   {% assign sorted = '' | split: "" %}   
+   {% assign sorted_cat=sorted| append: cat.docs.size %}
       <li><a href="https://ozhanatali.github.io/search?query={{ cat[0] }}" >{{ sorted_cat[0] }}</a>: {{ sorted_cat[1].size }} adet makale mevcut</li>
    {% endfor %}
    </ul>
