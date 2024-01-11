@@ -16,7 +16,7 @@ layout: post
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
-        "category": "{{ post.category | xml_escape }}",
+        "category": "{{ post.categories | array_to_sentence_string | xml_escape }}",
         "tag": "{{ post.tags | array_to_sentence_string | xml_escape }}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url | xml_escape }}"
