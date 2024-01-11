@@ -2,6 +2,7 @@
 layout: post
 title: İkinci Kitap Hakkında
 category: kitap
+tags: kitap, siyaset, sosyoloji, bilim
 ---
 
 {{ page.title }}
