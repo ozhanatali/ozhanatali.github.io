@@ -5,7 +5,7 @@ title: Özhan Atalı
 
 {% assign anasayfakategorileri = ''| split: '' %}
 {% for ktgr in site.data.kategoriler %}
-   {% assign anasayfakategorileri = ktgr.kategori | concat: anasayfakategorileri | sort: ktgr.size %}
+   {% assign anasayfakategorileri = ktgr.kategori | concat: anasayfakategorileri | sort: anasayfakategorileri.docs.size %}
 {% endfor %}
 
 
@@ -14,7 +14,7 @@ title: Özhan Atalı
 
 <! –– 5N1K Girişi  ––> 
   
-<h1>Intro/Psikanaliz/Dağarcık</h1>
+<h1>Intro/Psikanaliz/Dağarcık-1</h1>
    <ul class="posts">
       <li><b>Mukaddime:</b> İlgilisi "hakkımda" sayfasına bakabilir</li>
       <li><b>Muhayyile:</b> Açık ve dalgalı. Sahifesi yok. Özeti/hasılı/icmali burası (külli olarak işbu mecra).</li>
