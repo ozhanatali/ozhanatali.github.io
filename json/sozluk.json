@@ -1,6 +1,6 @@
 ---
 ---
-[
+{
 {% for soz in site.data.sozluk %}
   {
     "harf":"{{ soz.kelime | slice: 0 | upcase }}",
@@ -10,4 +10,4 @@
   }
 {% unless forloop.last %},{% endunless %}
 {% endfor %}
-]
+}
