@@ -14,33 +14,11 @@ title: Özhan Atalı
 
 <! –– 5N1K Girişi  ––> 
   
-<h1>Intro/Psikanaliz/Dağarcık-1</h1>
-   <ul class="posts">
-      <li><b>Mukaddime:</b> İlgilisi <a href="about">"hakkımda" sayfasına</a> bakabilir</li>
-      <li><b>Muhayyile:</b> Açık ve dalgalı. Sahifesi yok. Özeti/hasılı/icmali burası (külli olarak işbu mecra).</li>
-      <li><b>Muhasebe:</b> Mesleğim. Mum dibine ışık vermez imiş. Deneyelim.</li>
-      <li><b>Müracaat:</b> [TDK] Başvuru, danışma ve herhangi bir eserden yararlanma</li>
-      <li><b>Münacaat:</b> Gizlisi makbul. Aşikarı farz.</li>
-      <li><b>Mebde:</b> İlim. Biz buraya odaklanacağız.</li>
-      <li><b>Mead, Mana, Maarifet... </b></li>      
-      <li><b>Bismillah</b></li>
-   </ul>
-
-<! –– now  ––> 
-   
-<h1>Neler yapıyorum</h1>
-   nownownow akımına (sürekli sosyal medyadan ne yaptığını paylaşmak yerine ara sıra kendi siten üzerinden güncellemeler yapmak) istinaden please see <a href="/now">my "now" page</a>.
-
-<h1>Neden yapıyorum</h1>
-   Çok fazla konuya kısa süreli derinlemesine dalmak gibi bir huyum var. Bu zamanlarda ortaya çıkan bilgi birikimini kayda düşmek istedim.
-   Bunun için de sürdürülebilir minimalist bir platform geliştirdim.
-   
-<h1>Nasıl yapıyorum</h1>
-   Github + Jeckyll + Liquid + CSS + JS + HMTML (İlgilisine <a href="#">how to page</a>)
-
+<h1>Düşünce Sözlüğü</h1>
+<a href="/sozluk">Düşünce sözlüğü</a>
 <! –– tüm kategoriler  ––> 
    
- <h1>Hangi ana konularda yazmışım:</h1>
+ <h1>Konular:</h1>
    <ul class="posts">
    {% for cat in site.categories %}   
       <li><a href="https://ozhanatali.github.io/search?query={{ cat[0] }}" >{{ cat[0] }}</a>: {{ cat[1].size }} adet makale mevcut</li>
@@ -49,7 +27,7 @@ title: Özhan Atalı
    
 <! –– tüm taglar  ––> 
    
- <h1>Konuların altbaşlıkları-anahtar kelimeler:</h1>
+ <h1>Altbaşlıklar:</h1>
    <ul class="posts">
    {% for tag in site.tags %}
       <a href="https://ozhanatali.github.io/search?query={{ tag[0] }}" >{{ tag[0] }}</a> [{{ tag[1].size }}]   
