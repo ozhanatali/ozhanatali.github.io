@@ -175,7 +175,7 @@ kramdown:
 
 # Collections
 collections:
-  tech:
+  json:
     output: true
     permalink: /:collection/:title/ # title, path
   publications:
@@ -209,7 +209,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _tech
+  # _json
   - scope:
       path: ""
       type: tech
