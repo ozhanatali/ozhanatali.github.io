@@ -4,7 +4,6 @@
 # which you are expected to set up once and rarely need to edit after that.
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
-
 # Site Settings
 locale                   : "en-US"
 title                    : "Ozhan Atali"
@@ -48,13 +47,11 @@ staticman:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
   path                   : # blank (default) uses feed.xml
-
 # SEO Related
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
 yandex_site_verification :
-
 # Social Sharing
 twitter:
   username               : &twitter
@@ -69,15 +66,11 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-
-
 # Analytics
 analytics:
   provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
-
-
 # Site Author
 author:
   name             : "Ozhan Atali"
@@ -115,8 +108,6 @@ author:
   xing             :
   youtube          :
   wikipedia        :
-
-
 # Reading Files
 include:
   - .htaccess
@@ -151,16 +142,12 @@ keep_files:
   - .svn
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
-
 # Markdown Processing
 kramdown:
   input: GFM
@@ -171,24 +158,22 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
-
-
 # Collections
 collections:
   tech:
     output: true
+    permalink: /:collection/:path/
     permalink: /:collection/:title/ # title, path
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
     output: true
+    permalink: /:collection/:path/
     permalink: /:collection/:path/ 
   talks:
     output: true
     permalink: /:collection/:path/
-
-
 # Defaults
 defaults:
   # _posts
@@ -244,20 +229,15 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
 # Outputting
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
 timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
 # Plugins
 plugins:
   - jekyll-paginate
@@ -272,8 +252,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-
-
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
@@ -301,8 +279,6 @@ tag_archive:
 #   permalinks:
 #     category: /categories/:name/
 #     tag: /tags/:name/
-
-
 # HTML Compression
 # - http://jch.penibelst.de/
 compress_html:
