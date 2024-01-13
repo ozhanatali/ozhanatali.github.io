@@ -1,0 +1,8 @@
+{% for soz in site.data.sozluk %}
+  {
+    "harf":"{{ soz.kelime | slice: 0 }}"
+    "kelime":"{{ soz.kelime }}"
+    "koken":"{{ soz.koken }}"
+    "koken":"{{ soz.dusunce }}"
+  }
+{% endfor %}
