@@ -183,42 +183,45 @@ ul.posts {
   }
 
 a {
-  color: #B6E3C1;
+  color: #5972ff;
   text-decoration:none;
   font-weight: bold;
 }
 
 a:hover {
-  color: #B6E3C1;
+  color: #5972ff;
   text-decoration:underline;
 }
 
 a:visited {
-  color: #c6c6ef;
+  color: #5972ff;
 }
 
 
 ul.posts {
-  color: #c6c6ef;
+  color: white;
 }
 
 ul.posts span {
-  color: #c6c6ef;
+  color: #5363ba;
 }
   
   
 .site .title a {
-  color: #26d200;
+  color: #5972ff;
 }
   
 h1, h2, h3, h4, h5, h6 {
-    color: #26d200;
+    color: #5972ff;
 }
   
 .site .footer {
-  color: #FFFFFF;
+  color: white;
 }
-  
+
+p {
+    color: white;
+}
   
   
 }
