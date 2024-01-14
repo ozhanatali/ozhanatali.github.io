@@ -48,7 +48,7 @@ async function getir() {
       var tr = table.insertRow();
       tr.id="root"
 
-      data.forEach(element => root.insertAdjacentHTML('beforebegin', `<td>${element.harf}</td><tr><td>${element.kelime}</td><td>${element.dusunce}</td></tr>`));
+      data.forEach(element => root.insertAdjacentHTML('beforebegin', `<tr><td>${element.harf}</td><td>${element.kelime}</td><td>${element.dusunce}</td></tr>`));
 }
 
     </script>
