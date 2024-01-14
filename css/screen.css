@@ -171,40 +171,55 @@ ul.posts {
 /*****************************************************************************/
 
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+@media only screen  {
   
   body {
-    background-color: #112a46;
+    background-color: #112A46;
   }
   
   .site {
 
-    width: 95%;
+    width: 90%;
   }
 
 a {
-  color: #f6cbdc;
+  color: #B6E3C1;
   text-decoration:none;
   font-weight: bold;
 }
 
 a:hover {
-  color: #f6cbdc;
+  color: #B6E3C1;
   text-decoration:underline;
 }
 
 a:visited {
-  color: #f6cbdc;
+  color: #B6E3C1;
 }
 
 
 ul.posts {
-  color: #a4bfdb;
-  
+  color: ##FFFFFF;
 }
 
-
+ul.posts span {
+  color: ##FFFFFF;
+}
+  
+  
+.site .title a {
+  color: #B6E3C1;
+}
+  
+h1, h2, h3, h4, h5, h6 {
+    color: #B6E3C1;
+}
+  
+.site .footer {
+  color: ##FFFFFF;
+}
+  
+  
   
 }
 
