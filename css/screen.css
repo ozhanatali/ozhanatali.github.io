@@ -166,6 +166,51 @@ ul.posts {
 
 /*****************************************************************************/
 /*
+/* Mobile
+/*
+/*****************************************************************************/
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  
+  body {
+    background-color: #112a46;
+  }
+  
+  .site {
+
+    width: 95%;
+  }
+
+a {
+  color: #f6cbdc;
+  text-decoration:none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #f6cbdc;
+  text-decoration:underline;
+}
+
+a:visited {
+  color: #f6cbdc;
+}
+
+
+ul.posts {
+  color: #a4bfdb;
+  
+}
+
+
+  
+}
+
+
+/*****************************************************************************/
+/*
 /* Posts
 /*
 /*****************************************************************************/
