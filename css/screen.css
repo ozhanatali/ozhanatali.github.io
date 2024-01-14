@@ -178,7 +178,7 @@ ul.posts {
   }
   
   .site {
-
+    font-size: 175%;
     width: 90%;
   }
 
@@ -208,11 +208,11 @@ ul.posts span {
   
   
 .site .title a {
-  color: #5972ff;
+  color: white;
 }
   
 h1, h2, h3, h4, h5, h6 {
-    color: #5972ff;
+    color: white;
 }
   
 .site .footer {
