@@ -55,11 +55,20 @@ a:visited {
 table {
   font-size: inherit;
   font: 100%;
+  border-collapse: collapse;
 }
 
 
 tr {
     border-bottom: 1px solid rgba(0,0,0,0.12);
+}
+
+tr {
+    padding: 5px 5px;
+}
+
+tr:hover {
+     background-color: #f0f0f0;
 }
 
 /*****************************************************************************/
