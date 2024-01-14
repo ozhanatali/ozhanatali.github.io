@@ -5,11 +5,11 @@ layout: default
   <body onload="getir()">
     <div class="container"><br>
       <h3>
-        Düşünce Sözlüğüm
+        Düşünce Sözlüğü : <a href="#" onclick="getir();return false;">Güncelle</a>
       </h3>
       <br>
       <table id="table">
-        <thead id="head"><tr><td width="200"><b>First name</b></td><td><b>Last Name</b></td></tr></thead>
+        <thead id="head"><tr><td width="100"><b>Harf</b></td><td width="200"><b>Kelime</b></td><td><b>Üzerine</b></td></tr></thead>
         <tr id="root"></tr>
       </table>
     </div>
@@ -21,52 +21,37 @@ layout: default
 async function get() {
     let url = 'https://ozhanatali.github.io/json/sozluk.json'
     let obj = await (await fetch(url)).json();
-    
-    //console.log(obj);
     return obj;
 }
 var data;
 
 
-
-
-
 async function getir() {
   data= await get()
-
-var elifba=["a","b","c","ç","d","e","f","g","ğ","h","ı","i","j","k","l","M","n","o","ö","p","r","s","ş","t","u","ü","v","y","z"]
-
-
-data2=[];
-for(var x in elifba) {
-   
+  data2=[];
+  
+  var elifba=["a","b","c","ç","d","e","f","g","ğ","h","ı","i","j","k","l","M","n","o","ö","p","r","s","ş","t","u","ü","v","y","z"]
+  for(var x in elifba) { 
    let temp=data.filter(a => a.harf == elifba[x].toUpperCase());
    const randomValue = temp[parseInt(Math.random() * temp.length)];
    if(temp.length>0){ data2.push(randomValue)};
    console.log(randomValue);
-   
-}
-data=data2
-console.log(data)
+  }
+  data=data2
+  console.log(data)
       
-var table = document.getElementById("table");
-for(var i = table.rows.length - 1; i > 0; i--)
-{
-    table.deleteRow(i);
-};
-    var tr = table.insertRow();
-    tr.id="root"
+  var table = document.getElementById("table");
+  for(var i = table.rows.length - 1; i > 0; i--)
+  {
+      table.deleteRow(i);
+  };
+      var tr = table.insertRow();
+      tr.id="root"
 
-
-
-      data.forEach(element => root.insertAdjacentHTML('beforebegin', `<tr><td>${element.kelime}</td><td>${element.dusunce}</td></tr>`));
+      data.forEach(element => root.insertAdjacentHTML('beforebegin', `<td>${element.harf}</td><tr><td>${element.kelime}</td><td>${element.dusunce}</td></tr>`));
 }
-
 
     </script>
-
-
-<button onclick="getir()">Click me</button>
 
 
   </body>
