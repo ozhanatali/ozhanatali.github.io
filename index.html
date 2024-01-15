@@ -13,31 +13,15 @@ title: Özhan Atalı
 <div id="home">
 
 <! –– Giriş  ––> 
-  
-<div id="ana_linkler" style="text-align-last: center;"> 
-<a href="/sozluk">Düşünce Sözlüğü</a> |
-<a href="/sozluk">Başucu Linkleri</a> |
-<a href="/sozluk">Site İçinde Ara</a> |   
-</div>
+
+<h1>Serlevha:</h1>   
+<a href="/sozluk">Düşünce Sözlüğü</a> 
+<a href="/sozluk">Başucu Linkleri</a> 
+<a href="/sozluk">Meseleler</a>    
+<a href="/sozluk">Site İçinde Ara</a>    
    
 <! –– tüm kategoriler  ––> 
-   
- <h1>Konular:</h1>
-   <ul class="posts">
-   {% for cat in site.categories %}   
-      <li><a href="https://ozhanatali.github.io/search?query={{ cat[0] }}" >{{ cat[0] }}</a>: {{ cat[1].size }} adet makale mevcut</li>
-   {% endfor %}
-   </ul>
-   
-<! –– tüm taglar  ––> 
-   
-[//]: # <h1>Altbaşlıklar:</h1>
-[//]: #   <ul class="posts">
-[//]: #   {% for tag in site.tags %}
-[//]: #      <a href="https://ozhanatali.github.io/search?query={{ tag[0] }}" >{{ tag[0] }}</a> [{{ tag[1].size }}]   
-[//]: #   {% endfor %}
-[//]: #   </ul>
-   
+    
    
   <h1>Son Yazılar</h1>
   <ul class="posts">
@@ -63,18 +47,6 @@ title: Özhan Atalı
    {% endif %}
    {% endfor %}
  {% endfor %}
-
-
-  
-<! –– data klasöründeki linklerin ana sayfada listelenmesi  ––> 
-
-[//]: #<h1>Başucu Linkleri</h1>  
-[//]: #    <ul class="posts">
-[//]: #     {% for linkcik in site.data.linkler %}
-[//]: #      <li><a href={{ linkcik.link }} target="_blank" rel="noopener noreferrer"> {{ linkcik.baslik }} </a>: {{ linkcik.aciklama }} </li>
-[//]: #    {% endfor %}
-[//]: #  </ul>
-
 
    
 </div>
