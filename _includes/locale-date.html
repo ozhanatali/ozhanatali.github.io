@@ -1,6 +1,5 @@
 {{ site.time | date: '%d' }}
-{{ assign ay = site.time | date: '%m' }}
-{% case m %}
+{% site.time | date: '%m' %}
   {% when ‘01’ %}Ocak
   {% when ‘02’ %}Şubat
   {% when ‘03’ %}Mart
