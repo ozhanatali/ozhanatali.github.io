@@ -240,10 +240,11 @@ p {
 }  
 
   input { 
-  height: 35px !important;
+  height: 45px !important;
   width: 100% !important;
   font-size: x-large !important;  
   padding-left: 10px;
+  margin-bottom: 30px;  
 }
   
   
