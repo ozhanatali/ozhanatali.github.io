@@ -96,7 +96,7 @@ ul.posts {
 /*****************************************************************************/
 
 .site {
-  font-size: 115%;
+  font-size: 100%;
   font-family: monospace;
   text-align: justify;
   width: 42em;
@@ -180,8 +180,6 @@ ul.posts {
 
 a {
   color: #5972ff;
-  text-decoration:none;
-  font-weight: bold;
 }
 
 a:hover {
