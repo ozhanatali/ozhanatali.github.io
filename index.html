@@ -15,16 +15,19 @@ title: Özhan Atalı
 <! –– Giriş  ––>                                                                                                       
 
    
-<h1>Sayfalar:</h1>  
+<h1>Sayfalar</h1><br>
+========================<br>
 <ul class="posts">
-   <li><a href="/sozluk">Düşünce Sözlüğü</a>:</li>
-   <li><a href="/sozluk">Başucu Linkleri</a>:</li>
+   <li><a href="/sozluk">Düşünce Sözlüğü</a></li>
+   <li><a href="/sozluk">Başucu Linkleri</a></li>
 </ul>
    
 <! –– tüm kategoriler  ––> 
     
    
-  <h1>Yazılar</h1>
+  <h1>Yazılar</h1><br>
+========================<br>
+   
   <ul class="posts">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
@@ -34,7 +37,8 @@ title: Özhan Atalı
 
 <! –– tüm kategoriler  ––> 
    
- <h1>Kategoriler:</h1>
+ <h1>Kategoriler</h1><br>
+========================<br>
    <ul class="posts">
    {% for cat in site.categories %}   
       <li><a href="https://ozhanatali.github.io/search?query={{ cat[0] }}" >{{ cat[0] }}</a>: {{ cat[1].size }} adet makale mevcut</li>
