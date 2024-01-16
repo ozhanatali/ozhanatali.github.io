@@ -234,6 +234,11 @@ p {
   margin-top: 30px;
   margin-bottom: 10px;
 }  
+
+  input {
+  height: 35px !important;
+  font-size: x-large !important;  
+}
   
   
 }
