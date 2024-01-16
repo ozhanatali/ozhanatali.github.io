@@ -168,6 +168,10 @@ ul.posts {
   margin-bottom: 10px;
 }
 
+  input { 
+  padding-left: 10px;
+}
+
 /*****************************************************************************/
 /*
 /* Mobile
@@ -235,9 +239,11 @@ p {
   margin-bottom: 10px;
 }  
 
-  input {
+  input { 
   height: 35px !important;
+  width: 100% !important;
   font-size: x-large !important;  
+  padding-left: 10px;
 }
   
   
