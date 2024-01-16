@@ -1,5 +1,5 @@
-{% assign m = site.time | date: “%-m” %}
-{{ site.time | date: “%-d” }}
+{% assign m = site.time | date: '%B' %}
+{{ site.time | date: '%d' }}
 {% case m %}
     {% when ‘1’ %}Ocak
     {% when ‘2’ %}Şubat
@@ -14,4 +14,4 @@
     {% when ‘11’ %}Kasım
     {% when ‘12’ %}Aralık
 {% endcase %}
-{{ site.time | date: “%Y” }}
+{{ site.time | date: '%Y' }}
