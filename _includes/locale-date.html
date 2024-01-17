@@ -1,9 +1,21 @@
-{{ site.time | date: '%d-%m-%Y' }}
+{{ site.time | date: '%d-' }}
 
 {% assign ay = site.time | date: '%m' %}
 {% case ay %}
-  {% when "01" %} Ocak
-  {% when "02" %} Subat
+  {% when "01" %} Oca
+  {% when "02" %} Sub
+  {% when "03" %} Mar
+  {% when "04" %} Nis
+  {% when "05" %} May
+  {% when "06" %} Haz
+  {% when "07" %} Tem
+  {% when "08" %} Ağu
+  {% when "09" %} Eyl
+  {% when "10" %} Eki
+  {% when "11" %} Kas
+  {% when "12" %} Ara
   {% else %}
      Diğer
 {% endcase %}
+
+{{ site.time | date: '-%Y' }}
