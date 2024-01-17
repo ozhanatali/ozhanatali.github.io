@@ -1,7 +1,7 @@
-{{ site.time | date: '%d-' }}
+{{ site.time | date: '%d' }}
 
 {% assign ay = site.time | date: '%m' %}
-{% case ay | strip %}
+{% case ay %}
   {% when "01" %} Oca
   {% when "02" %} Sub
   {% when "03" %} Mar
@@ -18,4 +18,4 @@
      Diğer
 {% endcase %}
 
-{{ site.time | date: '-%Y' }}
+{{ site.time | date: '%Y' }}
