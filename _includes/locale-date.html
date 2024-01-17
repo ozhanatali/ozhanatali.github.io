@@ -1,17 +1,1 @@
-{{ site.time | date: '%d' }}-
-{{ site.time | date: '%m' }}-
-{% case site.time | date: '%m' %}
-  {% when '01' %} Ocak
-  {% when '02' %} Şubat
-  {% when '03' %} Mart
-  {% when '04' %} Nisan
-  {% when '05' %} Mayıs
-  {% when '06' %} Haziran
-  {% when '07' %} Temmuz
-  {% when '08' %} Ağustos
-  {% when '09' %} Eylül
-  {% when '10' %} Ekim
-  {% when '11' %} Kasım
-  {% when '12' %} Aralık
-{% endcase %}
-{{ site.time | date: '%Y' }}
+{{ site.time | date: '%d-%m-%Y' }}
