@@ -19,7 +19,7 @@ layout: default
     <script>
 
 async function get() {
-    let url = 'https://ozhanatali.github.io/json/sozluk.json'
+    let url = '../json/sozluk.json'
     let obj = await (await fetch(url)).json();
     return obj;
 }
