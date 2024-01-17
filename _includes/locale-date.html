@@ -1,1 +1,9 @@
 {{ site.time | date: '%d-%m-%Y' }}
+
+{% assign ay = site.time | date: '%m' %}
+{% case ay %}
+  {% when "01" %} Ocak
+  {% when "02" %} Subat
+  {% else %}
+     Diğer
+{% endcase %}
