@@ -158,6 +158,13 @@ kramdown:
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
+# Rouge options
+#line_numbers: true # bad idea, spans don't need linenos and would inherit this option
+  span:
+    line_numbers: false
+  block:
+    line_numbers: true
+    start_line: 1
 # Collections
 collections:
   tech:
