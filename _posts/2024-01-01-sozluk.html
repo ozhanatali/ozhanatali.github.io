@@ -35,8 +35,8 @@ async function getir() {
    let temp=data.filter(a => a.harf == elifba[x].toUpperCase());
    const randomValue = temp[parseInt(Math.random() * temp.length)];
    if(temp.length>0){ data2.push(randomValue)};
-   console.log(randomValue);
   }
+  
   data=data2
       
   var table = document.getElementById("table");
