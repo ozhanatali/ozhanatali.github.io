@@ -11,12 +11,22 @@ layout: default
 </div>
 
 <div id="related">
+  
+  <h2>İlgili Konular</h2>
+    {% for konu in page.categories or %}
+      <a href="https://ozhanatali.github.io/search?query={{ konu }}" >{{ konu }} | </a>
+    {% endfor %}
+    {% for tag in page.tags or %}
+      <a href="https://ozhanatali.github.io/search?query={{ tag }}" >{{ tag }} | </a>
+    {% endfor %} <br>
+ 
   <h2>Diğer Yazılar</h2>
   <ul class="posts">
-    {% for post in site.related_posts limit:3 %}
+    {% for post in site.related_posts limit:5 %}
       <li><span>{{ post.date | date_to_string | replace: "Jan", "Oca" | replace: "Feb", "Sub" | replace: "Apr", "Nis" | replace: "Jun", "Haz" | replace: "Jul", "Tem" | replace: "Aug", "Ağu" | replace: "Sep", "Eyl" | replace: "Oct", "Eki" | replace: "Nov", "Kas" | replace: "Dec", "Ara" }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+  
 </div>
 <br>
 <br>
