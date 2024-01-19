@@ -14,11 +14,11 @@ layout: default
   
   <h2>İlgili Konular</h2>
     {% for konu in page.categories or %}
-      <a href="https://ozhanatali.github.io/search?query={{ konu }}" >{{ konu }} | </a>
+      <a href="https://ozhanatali.github.io/search?query={{ konu }}" >{{ konu }}</a>&nbsp;|&nbsp;
     {% endfor %}
     {% for tag in page.tags or %}
-      <a href="https://ozhanatali.github.io/search?query={{ tag }}" >{{ tag }} | </a>
-    {% endfor %} <br>
+      <a href="https://ozhanatali.github.io/search?query={{ tag }}" >{{ tag }}</a>&nbsp;|&nbsp;
+    {% endfor %} <p></p>
  
   <h2>Diğer Yazılar</h2>
   <ul class="posts">
