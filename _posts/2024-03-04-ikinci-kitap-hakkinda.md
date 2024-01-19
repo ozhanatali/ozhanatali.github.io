@@ -1,8 +1,9 @@
 ---
 layout: post
 title: İkinci Kitap Hakkında
-category: kitap
+categories: kitap
 tags: kitap siyaset sosyoloji bilim
+konum: İstanbul
 redirect_from:
   - /2nci/
 ---
