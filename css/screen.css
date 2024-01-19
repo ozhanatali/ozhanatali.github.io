@@ -71,6 +71,15 @@ input[type=submit] {
       float: right;
 }
 
+input[type=text] {
+  background-image: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-48.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  background-position-x: 5px;
+  outline: 0;
+}
+
 /*****************************************************************************/
 /*
 /* Home
@@ -254,10 +263,6 @@ p {
   font-size: x-large !important;  
   padding-left: 10px;
   margin-bottom: 30px;  
-  background-image: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-48.png');
-  background-repeat: no-repeat;
-  background-position: left center;
-  outline: 0;
 
 }
   
