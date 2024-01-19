@@ -4,7 +4,7 @@ layout: default
 <div id="post">
   
   <h1 id="{{ page.title }}">{{ page.title }}</h1>
-  <p class="meta">{% include post-date.html %} {% if {{page.konum}} and {{page.konum}}!= "" and {{page.konum}}!= nil %}- {{page.konum}} {% endif %}</p>
+  <p class="meta">{% include post-date.html %} {% if {{post.konum}} and {{post.konum}}!= "" and {{post.konum}}!= nil %}- {{post.konum}} {% endif %}</p>
     
   {{ content }}
   
