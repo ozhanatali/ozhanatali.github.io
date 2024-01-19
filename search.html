@@ -4,7 +4,7 @@ layout: default
 <div id="arama_alani" style="width: 100%; padding-bottom: 40px; padding-left: 20px;" class="arama_alani">
 <form action="/search" method="get">
   <input type="text" id="search-box" onkeyup="buton_yonet()">
-  <input type="submit" value="Ara" id="button" disabled>
+  <input type="submit" value="Ara" id="ara-button" disabled>
 </form>
 </div>
   
@@ -29,9 +29,9 @@ layout: default
 
 function buton_yonet() {
 	 if(document.getElementById("search-box").value==="") { 
-            document.getElementById('button').disabled = true; 
+            document.getElementById('ara-button').disabled = true; 
         } else { 
-            document.getElementById('button').disabled = false;
+            document.getElementById('ara-button').disabled = false;
         }
     }
 </script>
