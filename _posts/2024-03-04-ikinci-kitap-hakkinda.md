@@ -7,11 +7,6 @@ redirect_from:
   - /2nci/
 ---
 
-{{ page.title }}
-================
-
-<p class="meta">18 Oct 2008 - San Francisco</p>
-
 2008 is a leap year. That means that three hundred and sixty six days ago,
 almost to the minute, I was sitting alone in a booth at Zeke's Sports Bar and
 Grill on 3rd Street in San Francisco. I wouldn't normally hang out at a sports
