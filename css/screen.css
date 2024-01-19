@@ -266,6 +266,30 @@ p {
   font-size: x-large !important;  
 }
   
+
+input[type=submit] {
+      text-align: center;
+      float: right;
+      width:15%;
+}
+
+input[type=text] {
+  background-image: url('https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-search-strong-48.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  background-position-x: 5px;
+  outline: 0;
+  padding-left: 90px;
+  float:left;
+  width:70%;
+}
+
+.arama_alani{
+  width: 100%!important; 
+  padding-bottom: 100px!important; 
+  padding-left: 20px!important;
+}
   
 }
 
