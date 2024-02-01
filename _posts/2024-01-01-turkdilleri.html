@@ -28,13 +28,12 @@ async function get() {
 
 async function getir() {
   var data= await get()
-  
   var table = document.getElementById("table");
-
   var tr = table.insertRow();
+  
   tr.id="root";
 
-  data.forEach(element => root.insertAdjacentHTML('beforebegin', `<tr><td>${element._id}</td><td>${element.soz}</td><td>${element.ornek}</td></tr>`));
+  data.forEach(element => root.insertAdjacentHTML('beforebegin', `<tr><td>${element._id}</td><td>${element.tr}</td><td>${element.az}</td></tr>`));
 }
 
     </script>
