@@ -10,8 +10,7 @@ layout: default
       </div>
       <br>
       <table id="table">
-        <thead id="head"><tr><td width="50"><b>AlfabeLER</b></td><td width="150"><b>Kelime</b></td><td><b>Örnek</b></td></tr></thead>
-        <tr id="root"></tr>
+        <thead id="head"><tr><td width="50"><b>ID</b></td><td width="150"><b>Kelime</b></td><td><b>Örnek</b></td></tr></thead>
       </table>
     </div>
     <br>
@@ -30,10 +29,7 @@ async function getir() {
   var data= await get()
   var table = document.getElementById("table");
   
-  var tr = table.insertRow();
-  tr.id="root"
-
-  data.forEach(element => root.insertAdjacentHTML('beforebegin', `<tr><td>${element._id}</td><td>${element.tr}</td><td>${element.az}</td></tr>`));
+  data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element.tr}</td><td>${element.az}</td></tr>`);
 }
 
     </script>
