@@ -27,7 +27,7 @@ async function get() {
 
 async function getir() {
   var data= await get();  
-  data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element.tr}</td><td>${element.az}</td></tr>`);
+  data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element.tr}</td><td>${element.az}</td></tr>`));
 }
 
     </script>
