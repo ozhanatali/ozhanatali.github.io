@@ -1,0 +1,43 @@
+---
+layout: default
+---
+
+  <body onload="getir()">
+    <div class="container"><br>
+      <div>
+        <label id="" for="sozcukara" style="">Söz ara :</label>
+        <input type="text" id="sozcukara" name="" value="" style="">
+      </div>
+      <br>
+      <table id="table">
+        <thead id="head"><tr><td width="50"><b>Alfabe</b></td><td width="150"><b>Kelime</b></td><td><b>Örnek</b></td></tr></thead>
+        <tr id="root"></tr>
+      </table>
+    </div>
+    <br>
+
+
+    <script>
+
+async function get() {
+    let url = 'https://us-central1.gcp.data.mongodb-api.com/app/application-0-edjpq/endpoint/textara?abdast'
+    let obj = await (await fetch(url)).json();
+    return obj;
+}
+
+
+async function getir() {
+  var data= await get()
+  
+  var table = document.getElementById("table");
+
+  var tr = table.insertRow();
+  tr.id="root";
+
+  data.forEach(element => root.insertAdjacentHTML('beforebegin', `<tr><td>${element._id}</td><td>${element.soz}</td><td>${element.ornek}</td></tr>`));
+}
+
+    </script>
+
+
+  </body>
