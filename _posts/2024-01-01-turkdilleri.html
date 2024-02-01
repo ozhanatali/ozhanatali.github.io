@@ -10,7 +10,7 @@ layout: default
       </div>
       <br>
       <table id="table">
-        <thead id="head"><tr><td width="50"><b>ID</b></td><td width="150"><b>Kelime</b></td><td><b>Örnek</b></td></tr></thead>
+        <thead id="head"><tr><td width="50"><b>Harf</b></td><td width="150"><b>Kelime</b></td><td><b>Örnek</b></td></tr></thead>
       </table>
     </div>
     <br>
@@ -26,9 +26,7 @@ async function get() {
 
 
 async function getir() {
-  var data= await get()
-  var table = document.getElementById("table");
-  
+  var data= await get();  
   data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element.tr}</td><td>${element.az}</td></tr>`);
 }
 
