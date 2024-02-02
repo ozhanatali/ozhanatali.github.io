@@ -3,7 +3,7 @@ layout: default
 ---
 
   <body onload="talebianla()">
-    <h3 style="text-align: center;">TÜRK DİLİ SÖZLÜĞÜ - ÜLKE LEHÇELERİNE GÖRE VE ÖRNEKLİ</h3><br>
+    <p style="text-align: center;">TÜRK DİLİ SÖZLÜĞÜ - ÜLKE LEHÇELERİNE GÖRE VE ÖRNEKLİ</p>
     <div id="arama_alani" style="width: 100%; padding-bottom: 40px; padding-left: 20px;" class="arama_alani">
       <input type="text" id="arama-alani" onkeyup="buton_yonet()" spellcheck="false">
       <input type="submit" value="Ara" id="ara-button" onclick="getir()" disabled>
@@ -31,7 +31,7 @@ layout: default
  
     <div class="container"><br>
       <table id="table">
-        <thead id="head"><tr><td width="50"><b>Harf</b></td><td width="150"><b>Kelime</b></td><td><b>Örnek</b></td></tr></thead>
+        <thead id="head"><tr><td width="50"><b>Sonuç</b></td><td width="150"><b>Kelime</b></td><td><b>Örnek</b></td></tr></thead>
         <tbody></tbody>
       </table>
     </div>
@@ -59,7 +59,8 @@ async function getir(dil="tr",alfabe="latin") {
 
   var anadil=sonucdil()
   var alfabe=sonucalfabe()
-  data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element[anadil]['soz'][alfabe]}</td><td>${element[anadil]['ornek'][alfabe]}</td></tr>`));
+  //foreach counter > https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/
+  data.forEach((element,index) => $(table).find('tbody').append(`<tr><td>${index+1}</td><td>${element[anadil]['soz'][alfabe]}</td><td>${element[anadil]['ornek'][alfabe]}</td></tr>`));
 };
       
 function buton_yonet() {	
