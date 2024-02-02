@@ -83,10 +83,9 @@ function buton_yonet() {
 
 function talebianla() {
 	//parametre varsa onu ara
-	console.log(urlpath=window.location.pathname.split('/'))
-	if (urlpath=window.location.pathname.split('/')[2]){
-	var urlkelimesi=window.location.pathname.split('/')[2];
-	getir(urlkelimesi);
+	var parametre=window.location.href.searchParams.get("kelime");
+	if(parametre!=""){
+	getir(parametre);
 	}
 	//butona tıklandığını algıla
 	let btn = document.getElementById("ara-button");
