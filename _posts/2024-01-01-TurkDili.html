@@ -56,8 +56,13 @@ async function get(kelime="") {
     }
     
     let url = 'https://us-central1.gcp.data.mongodb-api.com/app/application-0-edjpq/endpoint/textara?'+aranacakkelime;
+    if (aranacakkelime.length>0){
     let obj = await (await fetch(url)).json();
-    return obj;
+    return obj;    
+    }else{
+    return []
+    }
+    
 };
 
 
