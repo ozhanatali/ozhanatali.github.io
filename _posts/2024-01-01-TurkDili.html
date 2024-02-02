@@ -97,7 +97,7 @@ async function getir(kelime="") {
   var anadil=sonucdil()
   var alfabe=sonucalfabe()
   //foreach counter > https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/
-  data.forEach((element,index) => $(table).find('tbody').append(`<tr><td>${index+1}</td><td>${element[anadil]['soz'][alfabe]}</td><td>${element[anadil]['ornek'][alfabe].join("<br>");}</td></tr>`));
+  data.forEach((element,index) => $(table).find('tbody').append(`<tr><td>${index+1}</td><td>${element[anadil]['soz'][alfabe]}</td><td>${element[anadil]['ornek'][alfabe].join("<br>")}</td></tr>`));
   if (kelime.length>0) {highlight(kelime);}
 };
       
