@@ -88,7 +88,7 @@ function buton_yonet() {
 
 function talebianla() {
 	//parametre varsa onu ara
-	var parametre=(new URL(document.location)).searchParams.get("kelime");
+	var parametre=(new URL(document.location)).searchParams;
 	let searchParams = new URLSearchParams(parametre);
 	if(searchParams.has("kelime") === true ){
 	console.log(searchParams.get("kelime"));
