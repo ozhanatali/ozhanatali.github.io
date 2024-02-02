@@ -57,13 +57,11 @@ redirect_from:
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 
-async function getk(kelime="") {
+async function getk() {
     var parametre=(new URL(document.location)).searchParams;
     let searchParams = new URLSearchParams(parametre);	
 	
-    if (kelime.length>0){	
-	    var aranacakkelime =kelime}
-    else if (searchParams.has("kelime") === true){
+    if (searchParams.has("kelime") === true){
 	    var aranacakkelime = searchParams.get("kelime");
     }else{
 	    var aranacakkelime = $('#arama-alani').val();
@@ -80,14 +78,8 @@ async function getk(kelime="") {
 };
 
 
-async function getir(kelime) {
-  if (kelime && kelime.length>0){
-  var data =await getk(kelime);  	  
-  }
-  else {
-  var data= await getk();  
-  }
-	
+async function getir() {
+  var data =await getk();  	  
   var table = document.getElementById("table");
   for(var i = table.rows.length - 1; i > 0; i--)
   {
@@ -113,7 +105,7 @@ function talebianla() {
 	var parametre=(new URL(document.location)).searchParams;
 	let searchParams = new URLSearchParams(parametre);
 	if(searchParams.has("kelime") === true){
-	getir(searchParams.get("kelime") );
+	getir();
 	}
 	//butona tıklandığını algıla
 	let btn = document.getElementById("ara-button");
