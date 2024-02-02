@@ -56,9 +56,9 @@ async function getir(dil="tr",alfabe="latin") {
       table.deleteRow(i);
   };
 
-var anadil=sonucalfabe()
-var alfabe=sonucdil()	
-  data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element[anadil].soz[alfabe]}</td><td>${element.az.soz.latin}</td></tr>`));
+  var anadil=sonucdil()
+  var alfabe=sonucalfabe()
+  data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element[anadil]['soz'][alfabe]}</td><td>${element[anadil]['ornek'][alfabe]}</td></tr>`));
 };
       
 function buton_yonet() {	
