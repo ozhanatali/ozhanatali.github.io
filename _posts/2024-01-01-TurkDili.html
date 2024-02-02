@@ -57,7 +57,7 @@ redirect_from:
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 
-async function get(kelime="") {
+async function getk(kelime="") {
     var parametre=(new URL(document.location)).searchParams;
     let searchParams = new URLSearchParams(parametre);	
 	
@@ -82,10 +82,10 @@ async function get(kelime="") {
 
 async function getir(kelime="") {
   if (kelime.length>0){
-  var data =await get(kelime);  	  
+  var data =await getk(kelime);  	  
   }
   else {
-  var data= await get();  
+  var data= await getk();  
   }
 	
   var table = document.getElementById("table");
