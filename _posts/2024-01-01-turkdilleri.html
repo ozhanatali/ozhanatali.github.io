@@ -4,9 +4,18 @@ layout: default
 
   <body onload="talebianla()">
     <div id="arama_alani" style="width: 100%; padding-bottom: 40px; padding-left: 20px;" class="arama_alani">
-      <input type="text" id="arama-alani" onkeyup="buton_yonet()">
+      <input type="text" id="arama-alani" onkeyup="buton_yonet()" spellcheck="false">
       <input type="submit" value="Ara" id="ara-button" onclick="getir()" disabled>
     </div>
+    <form style="margin-bottom:20px">
+	  <p>Alfabe seçimi:</p>
+	  <input type="radio" id="latin" name="alfabe" value="latin" checked>
+	  <label for="latin">Latin</label><br>
+	  <input type="radio" id="arap" name="alfabe" value="arap">
+	  <label for="arap">Arap</label><br>  
+	  <input type="radio" id="kiril" name="alfabe" value="kiril">
+	  <label for="kiril">Kiril</label><br><br>
+    </form>  
     <div class="container"><br>
       <table id="table">
         <thead id="head"><tr><td width="50"><b>Harf</b></td><td width="150"><b>Kelime</b></td><td><b>Örnek</b></td></tr></thead>
