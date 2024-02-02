@@ -10,7 +10,7 @@ redirect_from:
 
   <body onload="getir()">
     <p style="text-align: center;">TÜRK DİLİ SÖZLÜĞÜ - ÜLKE LEHÇELERİNE GÖRE VE ÖRNEKLİ</p>
-    <div id="arama_alani" style="width: 100%; padding-bottom: 40px; padding-left: 20px;" class="arama_alani">
+    <div id="arama-alani-divi" style="width: 100%; padding-bottom: 40px; padding-left: 20px;" class="arama_alani">
       <input type="text" id="arama-alani" spellcheck="false">
       <input type="submit" value="Ara" id="ara-button" onclick="aramaya_yonlendir()" disabled>
     </div>
@@ -70,7 +70,7 @@ async function getk() {
     
     let url = 'https://us-central1.gcp.data.mongodb-api.com/app/application-0-edjpq/endpoint/textara?'+aranacakkelime;
     if (aranacakkelime.length>0){
-    document.getElementById('#arama-alani').setAttribute("placeholder", aranacakkelime);
+    document.getElementById('arama-alani').setAttribute("placeholder", aranacakkelime);
     let obj = await (await fetch(url)).json();
     return obj;    
     }else{
