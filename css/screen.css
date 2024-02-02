@@ -397,3 +397,8 @@ input[type=text] {
   border: 1px solid #ccc;
   border-top: none;
 }
+
+
+.renklendir {
+  background-color: yellow;
+}
