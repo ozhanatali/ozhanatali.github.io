@@ -40,10 +40,7 @@ async function getir() {
   data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element.tr.soz.latin}</td><td>${element.az.soz.latin}</td></tr>`));
 }
       
-function buton_yonet() {
-	 let btn = document.getElementById("ara-button");
-	 btn.addEventListener('click', getir());
-	
+function buton_yonet() {	
 	 if(document.getElementById("arama-alani").value==="") { 
             document.getElementById('ara-button').disabled = true; 
         } else { 
