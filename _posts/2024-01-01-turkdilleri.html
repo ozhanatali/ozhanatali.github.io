@@ -47,9 +47,8 @@ async function get() {
 };
 
 
-async function getir() {
+async function getir(dil="tr",alfabe="latin") {
   var data= await get();  
-
 
   var table = document.getElementById("table");
   for(var i = table.rows.length - 1; i > 0; i--)
@@ -57,9 +56,10 @@ async function getir() {
       table.deleteRow(i);
   };
 
-	
-  data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element.tr.soz.latin}</td><td>${element.az.soz.latin}</td></tr>`));
-}
+var anadil=dil
+var alfabe=alfabe	
+  data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element.get(anadil).soz.get(alfabe)}</td><td>${element.az.soz.latin}</td></tr>`));
+};
       
 function buton_yonet() {	
 	 if(document.getElementById("arama-alani").value==="") { 
@@ -77,18 +77,23 @@ function talebianla() {
     	if (e.key === 'Enter' || e.keyCode === 13) {	
     }
 });
+};
+
+
+function gosterimsecenekleri()	  {
+	
+	getir(sonucdil(),sonucalfabe());
 }
-
-
+	    
 function sonucalfabe() {
 	let alfabe=$('input[name="alfabe"]:checked').val();
-		console.log(alfabe)  
-}
+		return alfabe 
+};
 
 function sonucdil() {
-	let alfabe=$('input[name="alfabe"]:checked').val();
-		console.log(alfabe)  
-}
+	let dil=$('input[name="dil"]:checked').val();
+		return dil  
+};
 	    
     </script>
 
