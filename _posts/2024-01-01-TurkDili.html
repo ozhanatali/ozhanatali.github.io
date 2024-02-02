@@ -54,9 +54,14 @@ async function get() {
 };
 
 
-async function getir(dil="tr",alfabe="latin") {
+async function getir(kelime="") {
+  if (kelime.length>0){
+  var data = kelime;  	  
+  }
+  else {
   var data= await get();  
-
+  }
+	
   var table = document.getElementById("table");
   for(var i = table.rows.length - 1; i > 0; i--)
   {
@@ -77,6 +82,12 @@ function buton_yonet() {
         }};
 
 function talebianla() {
+	//parametre varsa onu ara
+	console.log(urlpath=window.location.pathname.split('/'))
+	if (urlpath=window.location.pathname.split('/')[2]){
+	var urlkelimesi=window.location.pathname.split('/')[2];
+	getir(urlkelimesi);
+	}
 	//butona tıklandığını algıla
 	let btn = document.getElementById("ara-button");
 	 btn.addEventListener('click', getir());
