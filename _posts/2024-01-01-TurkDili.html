@@ -34,7 +34,13 @@ redirect_from:
     <label class="radio-inline"><input type="radio" name="alfabe" value="arap" onClick="getir()">Arap</label>
     <label class="radio-inline"><input type="radio" name="alfabe" value="kiril" onClick="getir()">Kiril</label>
     </form>  
- 
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'London')">Kelime Arama</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Kelime Detayı</button>
+</div>
+
+<div id="London" class="tabcontent">
     <div class="container"><br>
       <table id="table">
         <thead id="head"><tr><td width="50"><b>Sonuç</b></td><td width="150"><b>Kelime</b></td><td><b>Örnek</b></td></tr></thead>
@@ -42,7 +48,12 @@ redirect_from:
       </table>
     </div>
     <br>
+</div>
+	  
 
+<div id="Paris" class="tabcontent">
+</div>
+	  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 
@@ -121,6 +132,24 @@ function sonucdil() {
 	let dil=$('input[name="dil"]:checked').val();
 		return dil  
 };
+
+
+
+
+// tab
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
 	    
     </script>
 
