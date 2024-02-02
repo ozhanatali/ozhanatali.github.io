@@ -20,7 +20,7 @@ layout: default
 
 async function get() {
     var aranacakkelime = $('search-box').val();
-    let url = 'https://us-central1.gcp.data.mongodb-api.com/app/application-0-edjpq/endpoint/textara?abdast'+str(aranacakkelime)
+    let url = 'https://us-central1.gcp.data.mongodb-api.com/app/application-0-edjpq/endpoint/textara?'+aranacakkelime;
     let obj = await (await fetch(url)).json();
     return obj;
 };
