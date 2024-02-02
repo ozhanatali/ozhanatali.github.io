@@ -9,23 +9,23 @@ layout: default
     </div>
     <form style="margin-bottom:20px">
     <label class="radio-inline">Dil seçimi:</label>	    
-    <label class="radio-inline"><input type="radio" name="dil" value="tr" onClick="sonucdil()" checked><abbr title="Türkiye">TR</abbr></label>
-    <label class="radio-inline"><input type="radio" name="dil" value="az" onClick="sonucdil()"><abbr title="Azerbaycan">AZ</abbr></label>	    
-    <label class="radio-inline"><input type="radio" name="dil" value="ba" onClick="sonucdil()"><abbr title="Başkurtistan">BA</abbr></label>
-    <label class="radio-inline"><input type="radio" name="dil" value="ks" onClick="sonucdil()"><abbr title="Kazakistan">KS</abbr></label>
-    <label class="radio-inline"><input type="radio" name="dil" value="ky" onClick="sonucdil()"><abbr title="Kırgızistan">KY</abbr></label>
-    <label class="radio-inline"><input type="radio" name="dil" value="uz" onClick="sonucdil()"><abbr title="Özbekistan">UZ</abbr></label>
-    <label class="radio-inline"><input type="radio" name="dil" value="tt" onClick="sonucdil()"><abbr title="Tataristan">TT</abbr></label>
-    <label class="radio-inline"><input type="radio" name="dil" value="tk" onClick="sonucdil()"><abbr title="Türkmenistan">TK</abbr></label>
-    <label class="radio-inline"><input type="radio" name="dil" value="ug" onClick="sonucdil()"><abbr title="Uygur">UG</abbr></label>
-    <label class="radio-inline"><input type="radio" name="dil" value="ru" onClick="sonucdil()"><abbr title="Rus">RU</abbr></label>
-    <label class="radio-inline"><input type="radio" name="dil" value="en" onClick="sonucdil()"><abbr title="English">EN</abbr></label>	    
+    <label class="radio-inline"><input type="radio" name="dil" value="tr" onClick="getir()" checked><abbr title="Türkiye">TR</abbr></label>
+    <label class="radio-inline"><input type="radio" name="dil" value="az" onClick="getir()"><abbr title="Azerbaycan">AZ</abbr></label>	    
+    <label class="radio-inline"><input type="radio" name="dil" value="ba" onClick="getir()"><abbr title="Başkurtistan">BA</abbr></label>
+    <label class="radio-inline"><input type="radio" name="dil" value="ks" onClick="getir()"><abbr title="Kazakistan">KS</abbr></label>
+    <label class="radio-inline"><input type="radio" name="dil" value="ky" onClick="getir()"><abbr title="Kırgızistan">KY</abbr></label>
+    <label class="radio-inline"><input type="radio" name="dil" value="uz" onClick="getir()"><abbr title="Özbekistan">UZ</abbr></label>
+    <label class="radio-inline"><input type="radio" name="dil" value="tt" onClick="getir()"><abbr title="Tataristan">TT</abbr></label>
+    <label class="radio-inline"><input type="radio" name="dil" value="tk" onClick="getir()"><abbr title="Türkmenistan">TK</abbr></label>
+    <label class="radio-inline"><input type="radio" name="dil" value="ug" onClick="getir()"><abbr title="Uygur">UG</abbr></label>
+    <label class="radio-inline"><input type="radio" name="dil" value="ru" onClick="getir()"><abbr title="Rus">RU</abbr></label>
+    <label class="radio-inline"><input type="radio" name="dil" value="en" onClick="getir()"><abbr title="English">EN</abbr></label>	    
     </form>  	  
     <form style="margin-bottom:20px">
     <label class="radio-inline">Alfabe seçimi:</label>	    
-    <label class="radio-inline"><input type="radio" name="alfabe" value="latin" onClick="sonucalfabe()" checked>Latin</label>
-    <label class="radio-inline"><input type="radio" name="alfabe" value="arap" onClick="sonucalfabe()">Arap</label>
-    <label class="radio-inline"><input type="radio" name="alfabe" value="kiril" onClick="sonucalfabe()">Kiril</label>
+    <label class="radio-inline"><input type="radio" name="alfabe" value="latin" onClick="getir()" checked>Latin</label>
+    <label class="radio-inline"><input type="radio" name="alfabe" value="arap" onClick="getir()">Arap</label>
+    <label class="radio-inline"><input type="radio" name="alfabe" value="kiril" onClick="getir()">Kiril</label>
     </form>  
  
     <div class="container"><br>
@@ -56,9 +56,9 @@ async function getir(dil="tr",alfabe="latin") {
       table.deleteRow(i);
   };
 
-var anadil=dil
-var alfabe=alfabe	
-  data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element.get(anadil).soz.get(alfabe)}</td><td>${element.az.soz.latin}</td></tr>`));
+var anadil=sonucalfabe()
+var alfabe=sonucdil()	
+  data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element[anadil].soz[alfabe]}</td><td>${element.az.soz.latin}</td></tr>`));
 };
       
 function buton_yonet() {	
@@ -79,11 +79,6 @@ function talebianla() {
 });
 };
 
-
-function gosterimsecenekleri()	  {
-	
-	getir(sonucdil(),sonucalfabe());
-}
 	    
 function sonucalfabe() {
 	let alfabe=$('input[name="alfabe"]:checked').val();
