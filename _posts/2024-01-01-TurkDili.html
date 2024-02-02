@@ -122,7 +122,7 @@ document.getElementById("arama-alani")
 function aramaya_yonlendir(){
 	var aranacakkelime = $('#arama-alani').val();
 	if (aranacakkelime.length >0){
-		var URL=(location.protocol + '//' + location.host + location.pathname)+aranacakkelime;
+		var URL=document.location.split('=')[0]+aranacakkelime;
 		window.location.replace(URL);
 	}
 };	    
