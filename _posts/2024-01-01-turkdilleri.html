@@ -32,7 +32,10 @@ async function getir() {
 }
       
 function buton_yonet() {
-	 if(document.getElementById("search-box").value==="") { 
+	 let btn = document.getElementById("ara-button");
+	 btn.addEventListener('click', getir);
+	
+	 if(document.getElementById("arama-alani").value==="") { 
             document.getElementById('ara-button').disabled = true; 
         } else { 
             document.getElementById('ara-button').disabled = false;
