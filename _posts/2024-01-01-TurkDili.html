@@ -153,13 +153,12 @@ function openCity(evt, cityName) {
 };
 
 
-function highlight(text) {
-  var inputText = document.getElementById("table");
-  var innerHTML = inputText.innerHTML;
-  var index = innerHTML.indexOf(text);
-  if (index >= 0) { 
-   innerHTML = innerHTML.substring(0,index) + "<span class='renklendir'>" + innerHTML.substring(index,index+text.length) + "</span>" + innerHTML.substring(index + text.length);
-   inputText.innerHTML = innerHTML;
+function highlight(searchText) {	
+  const text  = document.getElementById('table').innerHTML;
+  const regex = new RegExp(searchText, 'gi');
+  text = text.replace(/(<mark class="renklendir">|<\/mark>)/gim, '');
+  const newText = text.replace(regex, '<mark class="highlight">$&</mark>');
+  text.innerHTML = newText;	
   }
 };
 
