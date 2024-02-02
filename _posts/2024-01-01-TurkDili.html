@@ -11,7 +11,7 @@ redirect_from:
   <body onload="getir()">
     <p style="text-align: center;">TÜRK DİLİ SÖZLÜĞÜ - ÜLKE LEHÇELERİNE GÖRE VE ÖRNEKLİ</p>
     <div id="arama_alani" style="width: 100%; padding-bottom: 40px; padding-left: 20px;" class="arama_alani">
-      <input type="text" id="arama-alani" onkeyup="buton_yonet()" spellcheck="false">
+      <input type="text" id="arama-alani" spellcheck="false">
       <input type="submit" value="Ara" id="ara-button" onclick="aramaya_yonlendir()" disabled>
     </div>
     <form style="margin-bottom:20px">
@@ -80,7 +80,6 @@ async function getk() {
 
 
 async function getir() {
-  talebianla(); //entera veya butona tıklanırsa yönlendir
   var data =await getk();  	  
   var table = document.getElementById("table");
   for(var i = table.rows.length - 1; i > 0; i--)
@@ -103,20 +102,21 @@ async function getir() {
 
 };
       
-function buton_yonet() {	
-	 if(document.getElementById("arama-alani").value==="") { 
-            document.getElementById('ara-button').disabled = true; 
-        } else { 
-            document.getElementById('ara-button').disabled = false;
-		 //entera tıklanırsa butona tıkla
-		document.getElementById("arama-alani")
-		    .addEventListener("keyup", function(event) {
-		    event.preventDefault();
+//input gözetleme	
+//entera tıklanırsa butona tıkla
+//boş ise butonu kapat	    
+document.getElementById("arama-alani")
+	.addEventListener("keyup", function(event) {
+		if(document.getElementById("arama-alani").value==="") { 
+			document.getElementById('ara-button').disabled = true; 
+		} else { 
+			document.getElementById('ara-button').disabled = false;
+			}    
 		    if (event.keyCode === 13) {
 		        document.getElementById("ara-button").click();
 		    }
 		});
-        }};
+
 
    
 function aramaya_yonlendir(){
