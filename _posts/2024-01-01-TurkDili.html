@@ -63,7 +63,8 @@ async function getk() {
 	
     if (searchParams.has("kelime") === true){
 	    var aranacakkelime = searchParams.get("kelime");
-    }else{
+    }
+    else{
 	    var aranacakkelime = $('#arama-alani').val();
     }
     
@@ -107,17 +108,25 @@ function talebianla() {
 	if(searchParams.has("kelime") === true){
 	getir();
 	}
+	var aranacakkelime = $('#arama-alani').val();
 	//butona tıklandığını algıla
 	let btn = document.getElementById("ara-button");
-	 btn.addEventListener('click', getir());
+	 btn.addEventListener('click', yonlendir(aranacakkelime));
+	
 	//arama alaninda enter algıla
 	$("#arama-alani").on('keyup', function (e) {
     	if (e.key === 'Enter' || e.keyCode === 13) {
-		getir();
+	yonlendir(aranacakkelime);
     }
 });
 };
 
+	    
+function amaya_yonlendir(kelime=""){
+	var URL=(new URL(document.location))+kelime;
+	window.location.replace(URL);
+}	    
+	    
 	    
 function sonucalfabe() {
 	let alfabe=$('input[name="alfabe"]:checked').val();
