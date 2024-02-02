@@ -89,7 +89,7 @@ function buton_yonet() {
 function talebianla() {
 	//parametre varsa onu ara
 	var parametre=(new URL(document.location)).searchParams.get("kelime");
-	if(parametre!=""){
+	if(parametre!="" || parametre!=null || parametre!=undefined){
 	console.log(parametre);
 	getir(parametre);
 	}
