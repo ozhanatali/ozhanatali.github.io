@@ -96,7 +96,7 @@ async function getir() {
   let searchParams = new URLSearchParams(parametre);
   if (searchParams.has("kelime") === true){
 	    var aranacakkelime = searchParams.get("kelime");
-	    {highlight(aranacakkelime);}
+	    {highlight2(aranacakkelime);}
    };	
 
 
@@ -167,7 +167,14 @@ function highlight(text) {
   }
 };
 
-
+function highlight2(text) {
+	let searched = document.getElementById("search").value.trim();
+  if (searched !== "") {
+  	let re = new RegExp(searched,"g"); // search for all instances
+		let newText = text.replace(re, `<span class='renklendir'>${searched}</span>`);
+		document.getElementById("table").innerHTML = newText;
+  };
+};
 
 
 	    
