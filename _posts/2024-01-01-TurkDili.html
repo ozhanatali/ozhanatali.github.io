@@ -12,7 +12,7 @@ redirect_from:
     <p style="text-align: center;">TÜRK DİLİ SÖZLÜĞÜ - ÜLKE LEHÇELERİNE GÖRE VE ÖRNEKLİ</p>
     <div id="arama_alani" style="width: 100%; padding-bottom: 40px; padding-left: 20px;" class="arama_alani">
       <input type="text" id="arama-alani" onkeyup="buton_yonet()" spellcheck="false">
-      <input type="submit" value="Ara" id="ara-button" onclick="getir()" disabled>
+      <input type="submit" value="Ara" id="ara-button" onclick="aramaya_yonlendir()" disabled>
     </div>
     <form style="margin-bottom:20px">
     <label class="radio-inline">Dil seçimi:</label>	    
@@ -108,26 +108,23 @@ function buton_yonet() {
             document.getElementById('ara-button').disabled = true; 
         } else { 
             document.getElementById('ara-button').disabled = false;
+		 //entera tıklanırsa butona tıkla
+		document.getElementById("arama-alani")
+		    .addEventListener("keyup", function(event) {
+		    event.preventDefault();
+		    if (event.keyCode === 13) {
+		        document.getElementById("ara-button").click();
+		    }
+		});
         }};
 
-function talebianla() {
+   
+function aramaya_yonlendir(){
 	var aranacakkelime = $('#arama-alani').val();
-	//butona tıklandığını algıla
-	let btn = document.getElementById("ara-button");
-	btn.addEventListener('click', aramaya_yonlendir(aranacakkelime));
-	
-	//arama alaninda enter algıla
-	$("#arama-alani").on('keyup', function (e) {
-    	if (e.key === 'Enter' || e.keyCode === 13) {
-	aramaya_yonlendir(aranacakkelime);
-    }
-});
-};
-
-	    
-function aramaya_yonlendir(kelime=""){
-	var URL=document.location+kelime;
-	window.location.replace(URL);
+	if (aranacakkelime.length >0){
+		var URL=document.location+aranacakkelime;
+		window.location.replace(URL);
+	}
 };	    
 	    
 	    
