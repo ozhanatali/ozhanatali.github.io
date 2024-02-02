@@ -30,8 +30,7 @@ redirect_from:
     </form>  	  
     <form style="margin-bottom:20px">
     <label class="radio-inline">Alfabe seçimi:</label>	    
-    <label class="radio-inline"><input type="radio" name="alfabe" value="hepsi" onClick="getir()" checked>Hepsi</label>	    
-    <label class="radio-inline"><input type="radio" name="alfabe" value="latin" onClick="getir()">Latin</label>
+    <label class="radio-inline"><input type="radio" name="alfabe" value="latin" onClick="getir()" checked>Latin</label>
     <label class="radio-inline"><input type="radio" name="alfabe" value="arap" onClick="getir()">Arap</label>
     <label class="radio-inline"><input type="radio" name="alfabe" value="kiril" onClick="getir()">Kiril</label>
     </form>  
@@ -92,13 +91,9 @@ async function getir() {
   var anadil=sonucdil()
   var alfabe=sonucalfabe()
   //foreach counter > https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/
- if (alfabe=="hepsi"){
-  data.forEach((element,index) => $(table).find('tbody').append(`<tr><td>${index+1}</td><td>${element[anadil]['soz'].join("<br>")}</td><td>${element[anadil]['ornek'].join("<br><br>")}</td></tr>`));	 
- }	
- else {
-  data.forEach((element,index) => $(table).find('tbody').append(`<tr><td>${index+1}</td><td>${element[anadil]['soz'][alfabe].join("<br>")}</td><td>${element[anadil]['ornek'][alfabe].join("<br><br>")}</td></tr>`));
+
+data.forEach((element,index) => $(table).find('tbody').append(`<tr><td>${index+1}</td><td>${element[anadil]['soz'][alfabe].join("<br>")}</td><td>${element[anadil]['ornek'][alfabe].join("<br><br>")}</td></tr>`));
 	 
- }	
 
   var parametre=(new URL(document.location)).searchParams;
   let searchParams = new URLSearchParams(parametre);
