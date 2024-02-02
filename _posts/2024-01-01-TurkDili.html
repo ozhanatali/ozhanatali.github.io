@@ -8,7 +8,7 @@ redirect_from:
 
 ---
 
-  <body onload="talebianla()">
+  <body onload="getir()">
     <p style="text-align: center;">TÜRK DİLİ SÖZLÜĞÜ - ÜLKE LEHÇELERİNE GÖRE VE ÖRNEKLİ</p>
     <div id="arama_alani" style="width: 100%; padding-bottom: 40px; padding-left: 20px;" class="arama_alani">
       <input type="text" id="arama-alani" onkeyup="buton_yonet()" spellcheck="false">
@@ -102,12 +102,7 @@ function buton_yonet() {
         }};
 
 function talebianla() {
-	//parametre varsa onu ara
-    	var parametre=(new URL(document.location)).searchParams;
-    	let searchParams = new URLSearchParams(parametre);	
-	if(searchParams.has("kelime") === true){
-	getir();
-	};
+
 	var aranacakkelime = $('#arama-alani').val();
 	//butona tıklandığını algıla
 	let btn = document.getElementById("ara-button");
