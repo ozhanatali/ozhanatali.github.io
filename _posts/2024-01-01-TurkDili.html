@@ -80,6 +80,7 @@ async function getk() {
 
 
 async function getir() {
+  talebianla(); //entera veya butona tıklanırsa yönlendir
   var data =await getk();  	  
   var table = document.getElementById("table");
   for(var i = table.rows.length - 1; i > 0; i--)
@@ -110,7 +111,6 @@ function buton_yonet() {
         }};
 
 function talebianla() {
-
 	var aranacakkelime = $('#arama-alani').val();
 	//butona tıklandığını algıla
 	let btn = document.getElementById("ara-button");
