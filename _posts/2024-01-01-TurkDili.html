@@ -36,12 +36,12 @@ redirect_from:
     </form>  
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">Kelime Arama</button>
+  <button class="tablinks active" onclick="openCity(event, 'London')">Kelime Arama</button>
   <button class="tablinks" onclick="openCity(event, 'Paris')">Kelime Detayı</button>
 </div>
 
-<div id="London" class="tabcontent">
-    <div class="container"><br>
+<div id="London" class="tabcontent active" style="display: block; min-height: 200px;">
+    <div class="container" style="min-height: 200px;"><br>
       <table id="table">
         <thead id="head"><tr><td width="50"><b>Sonuç</b></td><td width="150"><b>Kelime</b></td><td><b>Örnek</b></td></tr></thead>
         <tbody></tbody>
@@ -51,7 +51,7 @@ redirect_from:
 </div>
 	  
 
-<div id="Paris" class="tabcontent">
+<div id="Paris" class="tabcontent" style="min-height: 200px;">
 </div>
 	  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
