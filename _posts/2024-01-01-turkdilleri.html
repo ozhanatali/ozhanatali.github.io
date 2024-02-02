@@ -8,13 +8,9 @@ layout: default
       <input type="submit" value="Ara" id="ara-button" onclick="getir()" disabled>
     </div>
     <form style="margin-bottom:20px">
-	  <p>Alfabe seçimi:</p>
-	  <input type="radio" id="latin" name="alfabe" value="latin" checked>
-	  <label for="latin">Latin</label><br>
-	  <input type="radio" id="arap" name="alfabe" value="arap">
-	  <label for="arap">Arap</label><br>  
-	  <input type="radio" id="kiril" name="alfabe" value="kiril">
-	  <label for="kiril">Kiril</label><br><br>
+    <label class="radio-inline"><input type="radio" name="optradio" checked>Latin</label>
+    <label class="radio-inline"><input type="radio" name="optradio">Arap</label>
+    <label class="radio-inline"><input type="radio" name="optradio">Kiril</label>
     </form>  
     <div class="container"><br>
       <table id="table">
