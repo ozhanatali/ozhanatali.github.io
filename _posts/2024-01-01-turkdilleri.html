@@ -4,7 +4,7 @@ layout: default
 
   <body>
     <div id="arama_alani" style="width: 100%; padding-bottom: 40px; padding-left: 20px;" class="arama_alani">
-      <input type="text" id="arama-alani" onkeyup="buton_yonet()" onsubmit="getir()">
+      <input type="text" id="arama-alani" onkeyup="buton_yonet()">
       <input type="submit" value="Ara" id="ara-button" onclick="getir()" disabled>
     </div>
     <div class="container"><br>
@@ -50,7 +50,18 @@ function buton_yonet() {
             document.getElementById('ara-button').disabled = false;
         }};
 
-      
+function talebianla() {
+	//butona tıklandığını algıla
+	let btn = document.getElementById("ara-button");
+	 btn.addEventListener('click', getir());
+	//arama alaninda enter algıla
+	$("#arama-alani").on('keyup', function (e) {
+    	if (e.key === 'Enter' || e.keyCode === 13) {
+        getir();
+    }
+});
+}
+	    
     </script>
 
 
