@@ -103,26 +103,26 @@ function buton_yonet() {
 
 function talebianla() {
 	//parametre varsa onu ara
-	var parametre=(new URL(document.location)).searchParams;
-	let searchParams = new URLSearchParams(parametre);
+    	var parametre=(new URL(document.location)).searchParams;
+    	let searchParams = new URLSearchParams(parametre);	
 	if(searchParams.has("kelime") === true){
 	getir();
-	}
+	};
 	var aranacakkelime = $('#arama-alani').val();
 	//butona tıklandığını algıla
 	let btn = document.getElementById("ara-button");
-	 btn.addEventListener('click', amaya_yonlendir(aranacakkelime));
+	btn.addEventListener('click', aramaya_yonlendir(aranacakkelime));
 	
 	//arama alaninda enter algıla
 	$("#arama-alani").on('keyup', function (e) {
     	if (e.key === 'Enter' || e.keyCode === 13) {
-	amaya_yonlendir(aranacakkelime);
+	aramaya_yonlendir(aranacakkelime);
     }
 });
 };
 
 	    
-function amaya_yonlendir(kelime=""){
+function aramaya_yonlendir(kelime=""){
 	var URL=(new URL(document.location))+kelime;
 	window.location.replace(URL);
 }	    
