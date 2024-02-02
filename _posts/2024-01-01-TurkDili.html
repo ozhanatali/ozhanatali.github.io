@@ -60,8 +60,11 @@ redirect_from:
 async function get(kelime="") {
     var parametre=(new URL(document.location)).searchParams;
     let searchParams = new URLSearchParams(parametre);	
-    if (kelime.length>0 || searchParams.has("kelime") === true){
-	    var aranacakkelime =kelime || searchParams.get("kelime");
+	
+    if (kelime.length>0){	
+	    var aranacakkelime =kelime}
+    else if (searchParams.has("kelime") === true){
+	    var aranacakkelime = searchParams.get("kelime");
     }else{
 	    var aranacakkelime = $('#arama-alani').val();
     }
@@ -109,8 +112,8 @@ function talebianla() {
 	//parametre varsa onu ara
 	var parametre=(new URL(document.location)).searchParams;
 	let searchParams = new URLSearchParams(parametre);
-	if(searchParams.has("kelime") === true ){
-	getir(searchParams.get("kelime"));
+	if(searchParams.has("kelime") === true){
+	getir(searchParams.get("kelime") );
 	}
 	//butona tıklandığını algıla
 	let btn = document.getElementById("ara-button");
