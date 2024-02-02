@@ -70,6 +70,7 @@ async function getk() {
     
     let url = 'https://us-central1.gcp.data.mongodb-api.com/app/application-0-edjpq/endpoint/textara?'+aranacakkelime;
     if (aranacakkelime.length>0){
+    document.getElementById('#arama-alani').setAttribute("placeholder", aranacakkelime);
     let obj = await (await fetch(url)).json();
     return obj;    
     }else{
