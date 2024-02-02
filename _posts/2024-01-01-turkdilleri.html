@@ -5,12 +5,13 @@ layout: default
   <body onload="getir()">
     <div class="container"><br>
       <div>
-        <label id="" for="sozcukara" style="">Söz ara :</label>
-        <input type="text" id="sozcukara" name="" value="" style="">
+        <label id="" for="sozcukara" style="">Söz ara :</label><br>
+        <input type="text" id="sozcukara" name="" value="" style="" style="margin-bottom:20px;margin-top:10px">
       </div>
       <br>
       <table id="table">
         <thead id="head"><tr><td width="50"><b>Harf</b></td><td width="150"><b>Kelime</b></td><td><b>Örnek</b></td></tr></thead>
+        <tbody></tbody>
       </table>
     </div>
     <br>
@@ -27,7 +28,7 @@ async function get() {
 
 async function getir() {
   var data= await get();  
-  data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element.tr}</td><td>${element.az}</td></tr>`));
+  data.forEach(element => $(table).find('tbody').append(`<tr><td>${element._id}</td><td>${element.tr.soz.latin}</td><td>${element.az.soz.latin}</td></tr>`));
 }
 
     </script>
