@@ -80,8 +80,8 @@ async function getk(kelime="") {
 };
 
 
-async function getir(kelime="") {
-  if (kelime.length>0){
+async function getir(kelime) {
+  if (kelime && kelime.length>0){
   var data =await getk(kelime);  	  
   }
   else {
