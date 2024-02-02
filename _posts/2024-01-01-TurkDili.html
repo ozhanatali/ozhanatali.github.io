@@ -111,12 +111,12 @@ function talebianla() {
 	var aranacakkelime = $('#arama-alani').val();
 	//butona tıklandığını algıla
 	let btn = document.getElementById("ara-button");
-	 btn.addEventListener('click', yonlendir(aranacakkelime));
+	 btn.addEventListener('click', amaya_yonlendir(aranacakkelime));
 	
 	//arama alaninda enter algıla
 	$("#arama-alani").on('keyup', function (e) {
     	if (e.key === 'Enter' || e.keyCode === 13) {
-	yonlendir(aranacakkelime);
+	amaya_yonlendir(aranacakkelime);
     }
 });
 };
