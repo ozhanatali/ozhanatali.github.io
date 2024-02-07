@@ -38,6 +38,7 @@ redirect_from:
 <div class="tab">
   <button class="tablinks active" onclick="openCity(event, 'London')">Kelime Arama</button>
   <button class="tablinks" onclick="openCity(event, 'Paris')">Kelime Detayı</button>
+  <button class="tablinks" onclick="openCity(event, 'Son')">Son Eklenenler</button>	
 </div>
 
 <div id="London" class="tabcontent active" style="display: block; min-height: 200px;">
@@ -53,10 +54,33 @@ redirect_from:
 
 <div id="Paris" class="tabcontent" style="min-height: 200px;">
 </div>
+
+<div id="Son" class="tabcontent" style="min-height: 200px;">
+</div>
 	  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 
+	    
+async function sonsozler() {
+	//jsonı çek
+	let url = "https://us-central1.gcp.data.mongodb-api.com/app/application-0-edjpq/endpoint/sonsozler"
+	let obj = await (await fetch(url)).json()
+	//liste oluştur
+	var list = document.createElement('ul');
+	for (var i = 0; i < obj["result"].length; i++) {
+	var item = document.createElement('li');
+	var urllink = document.createElement('a');
+	var currentURL=(location.protocol + '//' + location.host + location.pathname +'?kelime=')
+	urllink.href = currentURL+obj["result"][i];
+	urllink.innerText = obj["result"][i];
+	item.appendChild(urllink);
+	list.appendChild(item);
+	}
+	document.getElementById('foo').appendChild(list);	
+};
+
+	    
 async function getk() {
     var parametre=(new URL(document.location)).searchParams;
     let searchParams = new URLSearchParams(parametre);	
