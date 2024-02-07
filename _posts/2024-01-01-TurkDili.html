@@ -68,9 +68,9 @@ async function sonsozler() {
 	let obj = await (await fetch(url)).json()
 	//liste oluştur
 	var list = document.createElement('ul');
+	    list.style.cssText="margin-left: 30px; margin-top: 10px;";
 	for (var i = 0; i < obj["result"].length; i++) {
-	var item = document.createElement('li');
-	    item.style.cssText="margin-left: 30px; margin-top: 10px;";
+	var item = document.createElement('li'); 
 	var urllink = document.createElement('a');
 	var currentURL=(location.protocol + '//' + location.host + location.pathname +'?kelime=')
 	urllink.href = currentURL+obj["result"][i];
