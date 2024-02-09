@@ -16,7 +16,7 @@ redirect_from:
     </div>
     <form style="margin-bottom:20px">
     <label class="radio-inline">Dil seçimi:</label>	    
-    <label class="radio-inline"><input type="radio" name="dil" value="tr" onClick="getir()" checked><abbr title="Türkiye">TR</abbr></label>
+    <label class="radio-inline"><input type="radio" name="dil" value="tr" onClick="getir()"><abbr title="Türkiye">TR</abbr></label>
     <label class="radio-inline"><input type="radio" name="dil" value="az" onClick="getir()"><abbr title="Azerbaycan">AZ</abbr></label>	    
     <label class="radio-inline"><input type="radio" name="dil" value="ba" onClick="getir()"><abbr title="Başkurtistan">BA</abbr></label>
     <label class="radio-inline"><input type="radio" name="dil" value="ks" onClick="getir()"><abbr title="Kazakistan">KS</abbr></label>
@@ -30,7 +30,7 @@ redirect_from:
     </form>  	  
     <form style="margin-bottom:20px">
     <label class="radio-inline">Alfabe seçimi:</label>	    
-    <label class="radio-inline"><input type="radio" name="alfabe" value="latin" onClick="getir()" checked>Latin</label>
+    <label class="radio-inline"><input type="radio" name="alfabe" value="latin" onClick="getir()">Latin</label>
     <label class="radio-inline"><input type="radio" name="alfabe" value="arap" onClick="getir()">Arap</label>
     <label class="radio-inline"><input type="radio" name="alfabe" value="kiril" onClick="getir()">Kiril</label>
     </form>  
@@ -165,13 +165,24 @@ function aramaya_yonlendir(){
 	    
 	    
 function sonucalfabe() {
-	let alfabe=$('input[name="alfabe"]:checked').val();
+
+	if ($('input[name="alfabe"]:checked').length > 0) {
+		let alfabe=$('input[name="alfabe"]:checked').val();
 		return alfabe 
+	}else{
+		let alfabe="latin";
+		return alfabe 		
+	};
 };
 
 function sonucdil() {
-	let dil=$('input[name="dil"]:checked').val();
-		return dil  
+	if ($('input[name="dil"]:checked').length > 0) {
+		let dil=$('input[name="dil"]:checked').val();
+		return alfabe 
+	}else{
+		let dil="tr";
+		return alfabe 		
+	};	
 };
 
 
@@ -192,7 +203,32 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 };
 
+// remember radio button selection using local storage
+	    
+$(function()
+{
+    $('input[type=radio]').each(function()
+    {
+        var state = JSON.parse( localStorage.getItem('radio_'  + this.id) );
 
+        if (state) this.checked = state.checked;
+    });
+});
+
+$(window).bind('unload', function()
+{
+    $('input[type=radio]').each(function()
+    {
+        localStorage.setItem(
+            'radio_' + this.id, JSON.stringify({checked: this.checked})
+        );
+    });
+});​
+
+
+
+	    
+// highlight-underline search text
 function highlight(text) {
   var inputText = document.getElementById("table");
   var innerHTML = inputText.innerHTML;
