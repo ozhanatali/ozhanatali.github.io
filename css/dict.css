@@ -13,9 +13,13 @@
 
 .herbirsoz {
     padding: 1px 3px 1px 3px;
-    background: #d2d2d25e;
     border-radius: 3px;
     border: 1px #cdcdcd94 solid;
     overflow: hidden;
+    line-height: 22px;
+}
+
+.herbirsoz:hover {
+    background: #d2d2d25e;
 }
 
