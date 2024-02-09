@@ -61,6 +61,11 @@ redirect_from:
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
 
+//----------- load css only for dict page----/////////////
+$('head')
+  .append( $('<link rel="stylesheet" type="text/css" />')
+  .attr('href', 'https://ozhan.link/css/dict.css') );
+	    
 	    
 async function sonsozler() {
 	//jsonı çek
