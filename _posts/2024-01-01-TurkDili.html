@@ -215,7 +215,16 @@ $(function()
     });
 });
 
-
+	    
+$(window).bind('beforeunload', function()
+{
+    $('input[type=radio]').each(function()
+    {
+        localStorage.setItem(
+            'radio_' + this.id, JSON.stringify({checked: this.checked})
+        );
+    });
+});​
 
 
 
