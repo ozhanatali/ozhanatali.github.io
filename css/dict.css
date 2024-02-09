@@ -14,18 +14,29 @@
 .herbirsoz {
     padding: 1px 3px 1px 3px;
     border-radius: 3px;
-    border: 1px #cdcdcd94 solid;
+    border: 0px #cdcdcd94 solid;
     overflow: hidden;
     line-height: 22px;
+}
+
+.herbircumle:hover {
+    background: #d2d2d25e;
+}
+
+.herbircumle {
+    padding: 1px 3px 1px 3px;
+    border-radius: 3px;
+    border: 0px #cdcdcd94 solid;
+    overflow: hidden;
+    line-height: 24px;
 }
 
 .herbirsoz:hover {
     background: #d2d2d25e;
 }
 
-
 .renklendir {
-  text-decoration: red wavy underline;
+    font-weight: bold;
   
 }
 
