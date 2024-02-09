@@ -125,7 +125,7 @@ async function getir() {
   var alfabe=sonucalfabe()
   //foreach counter > https://www.freecodecamp.org/news/javascript-foreach-js-array-for-each-example/
 
-data.forEach((element,index) => $(table).find('tbody').append(`<tr><td>${index+1}</td><td><span class="herbirsoz">${element[anadil]['soz'][alfabe].reduce((previous, current) => {return previous + "</span>" + current +"</span>"})("<br>")}</td><td>${element[anadil]['ornek'][alfabe].join("<br><br>")}</td></tr>`));
+data.forEach((element,index) => $(table).find('tbody').append(`<tr><td>${index+1}</td><td><span class="herbirsoz">${element[anadil]['soz'][alfabe].reduce((previous, current) => {return previous + '</span>' + current +'</span>'})("<br>")}</td><td>${element[anadil]['ornek'][alfabe].join("<br><br>")}</td></tr>`));
 	 
 
   var parametre=(new URL(document.location)).searchParams;
