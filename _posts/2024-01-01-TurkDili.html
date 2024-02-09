@@ -207,13 +207,13 @@ function openCity(evt, cityName) {
 $(function()
 {
     //dil seçenekleri için
-    $('input[type=radio][name='dil']').each(function()
+    $('input[type=radio][name=dil]').each(function()
     {
         var state = JSON.parse( localStorage.getItem('dil_'  + this.id) );
         if (state) this.checked = state.checked;
     });
     //alfabe seçenekleri için
-    $('input[type=radio][name='alfabe']').each(function()
+    $('input[type=radio][name=alfabe]').each(function()
     {
         var state = JSON.parse( localStorage.getItem('alfabe_'  + this.id) );
         if (state) this.checked = state.checked;
