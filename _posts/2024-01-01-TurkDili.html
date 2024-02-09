@@ -225,14 +225,14 @@ $(function()
 $(window).bind('beforeunload', function()
 {
     //dil seçenekleri için
-    $('input[type=radio][name='dil']').each(function()
+    $('input[type=radio][name=dil]').each(function()
     {
         localStorage.setItem(
             'dil_' + this.id, JSON.stringify({checked: this.checked})
         );
     });
     //alfabe seçenekleri için
-    $('input[type=radio][name='alfabe']').each(function()
+    $('input[type=radio][name=alfabe]').each(function()
     {
         localStorage.setItem(
             'alfabe_' + this.id, JSON.stringify({checked: this.checked})
