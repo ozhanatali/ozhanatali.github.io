@@ -1,0 +1,90 @@
+---
+layout: post
+title: My AI notes - 2/3
+categories: AI
+tags: AI, Artificial+Intelligence
+konum: İstanbul
+---
+
+Starting an AI project
+===================
+-Workflow of projects
+-Selecting AI projects
+-Organizing data and team for the projects
+
+
+Workflow of a ML Project
+===================
+ie speech recognition or self-driving car
+tools:Amazon Echo/Alexa keywords
+
+Step1:	Collect data
+Step2:	Train model (You have to iterate many times until, hopefully, the model looks like is good enough.)
+Step3:	Deploy model (incl. maitain/update)
+
+
+
+Workflow of a Data Science Project
+===================
+ie Optimize a sales funnel (of an onlines market)
+or automize a manufacturing line
+or ML to prioritize the leads of customers/collections
+or Automated visual inspections
+or Automated resume screening
+or Recommending personalized ads/services
+
+Step1:	Collect data
+Step2:	Analyze data
+Step3:	Suggest hypotheses/actions
+
+
+**Every job function needs to learn how to use data
+
+
+How to choose an AI Project
+===================
+
+
+Interception of "what AI can do/AI experts" and "Valuable for your business/domain experts"
+
+Brainstorming framework:
+========================
+...much more useful to think about automating tasks rather than automating jobs...
+...you can make progress even without big data, even without tons of data...
+
+1st due diligence (technical/business/ethical) the project before starting
+1-Technical:
+-Consider AI performance
+-How much data needed
+-Engineering timeline
+2-Busines:
+-Costs
+-Revenue
+-Launch new product/business?
+3-Ethical diligence
+
+
+Build or Buy??
+========================
+ML can be 		>inhouse/outsource
+Data Science 		>inhouse
+if an industry standard >avoid building it
+
+
+Working with an AI team
+========================
+
+-specify an acceptance criteria for the project
+
+# of Training set > # of Stest Set
+
+
+Technical tools for AI teams
+========================
+Open Source: 	PyTorch, TensorFlow, Hugging Face PaddlePaddle, Scikit-Learn, or R
+Academic:	Arxiv
+Open Repo:	GitHub
+edge deployments:the computation has to happen usually in a computer right there inside the car, that's called an edge deployment.
+edge/cloud/on-prem
+
+
