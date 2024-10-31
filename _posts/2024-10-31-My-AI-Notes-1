@@ -1,0 +1,133 @@
+---
+layout: post
+title: My AI notes - 1/3
+categories: AI
+tags: AI, Artificial+Intelligence
+konum: İstanbul
+---
+
+-Arthur Samuel (1959)(who wrote a checkers playing program) defined the ML as a "field of study that gives computers the ability to learn without being explicitly programmed".
+
+ML algorithms:
+-Supervised learning (require labeled data or a training set) (learns from being given right answers)
+	input(A)		output(B)		Application
+	email			spam?(0/1)		spam filtering
+	audito			text transcripts	speech recognition
+	English			Chinese			machine translation
+	ad,user info		cliks?(0/1)		online advertising
+	image,radar info	position of other cars	Self-driving car
+	image of phone		defect?(0/1)		visual inspection
+	sequence of words	the next word		chatbot
+	Supervised learning also lies at the heart of generative AI systems, like the ChatGPT and chat bots that generate texts. 
+	LLM:Large language models are built by using supervised learning to train a model to repeatedly predict the next word.
+
+-Unsupervised learning (does not require labeled data or a training set. Our job is to find some structure or some pattern or just find something interesting in the data. ie a clustering algorithm. ie google news/DNA microarray/customer clustering)
+	a)clustering (group similar data points together)
+	b)anomaly detection (find unusual data points)
+	c)dimensionality reduction (take a big data-set and almost magically compress it to a much smaller data-set while losing as little information as possible)
+
+-Recommender systems
+-Reinforecement learning (provides training feedback using a reward mechanism)
+
+
+Machine Learning had grown up as a sub-field of AI or artificial intelligence.
+
+
+Demystifying AI
+1- Artificial narrow intelligence or [ANI] (AIs that do one thing such as a smart speaker/self driving car/web search/AI applications in farming or in a factory)
+2- Generative AI (ie Chat GPT, bard, Midjourney, Dall-E)
+3- Artificial General Intelligence [AGI] (goal of building AI that could do any intellectual tasks that a human can)
+
+
+-AI company or an AI first company
+deep learning=> sometimes also called neural networks
+
+
+
+large neural net
+medium neural net
+small neural net
+traditional AI
+
+
+how to get/acquire data:
+1-Manual labeling
+2-Observing behaviours
+3-Download from a website/get from a partner
+AI team will need to figure out how to clean up the data or deal with incorrect labels and or missing values
+
+
+types of data:
+unstructured data=images, audio, and text
+structured data
+supervised learning can work very well for both of these types of data, unstructured data and structured data
+
+
+Machine learning often results in a running AI system
+
+A data science project is a set of insights that can help you make business decisions, such as what type of house to build or whether to invest in renovation. 
+The boundaries between these two terms, machine learning and data science, are actually a little bit fuzzy, and these terms are not used consistently, even in industry today.
+
+
+machine learning is the field of study that gives computers the ability to learn without being explicitly programmed.
+data science is a science of extracting knowledge and insights from data. 
+
+
+
+***deep learning:
+***(artificial) neural network
+***The terms neural network and deep learning are used almost interchangeably, they mean essentially the same thing.
+And when we draw a picture of an artificial neural network, there's a very loose analogy to the brain.
+This big artificial neural network is just a big mathematical equation that tells it, given the inputs A, how do you compute the price B?
+
+AI is this huge set of tools for making computers behave intelligently. Of AI, the biggest subset is probably tools from machine learning, but AI does have other tools than machine learning, such as some of these buzzwords listed at the bottom. 
+AI> ML> DL/NN
+Data science is maybe a cross cutting subset of all of these tools
+
+Traditional vs Internet Companies (Shopping Mall Example):
+Internet Era:
+-A/B Testing
+-Short iteration time etc not available in traditional malls but online shoppimg malls.
+AI Era:
+-Stategic data acquisition3
+-unified data houses
+-automation opportunities
+-new roles for AI
+
+
+five-step AI transformation playbook
+1-execute pilot projects to gain momentum
+2-building in house AI team
+3-Provide broad AI training
+4-Develop an AI strategy
+5-Develop internal and external communications
+
+
+
+AI can 		> Self driving car
+AI can't	> Human attention/gesture guessing
+
+
+ML Strengts/Tends to work well:
+1-Learning a "simple" concept
+2- Lots of available data
+
+
+ML Weaknessess/work poorly:
+1- Learning complex concepts from small amounts of data
+2- It is asked to perform a new types of data
+
+
+
+Demand Prediction
+================
+Price > (artificial) neuron > Demand
+Price&Shipping Cost&Marketing&Material >>>> multiple neurons working (awareness,affordibility,perceived quality etc) > Demand
+
+
+Face Recognition
+================
+1000x1000px image if grayscale > 1m pixels as input
+1000x1000px image if colorfull > 3m pixels as input (for red,green,blue)
+Neurons first learns to detect the "edges", then parts of it, then different shapes of faces.
+
