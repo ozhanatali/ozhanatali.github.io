@@ -51,6 +51,17 @@ Our goal is to minimizing the cost function :
 
 $$\underset{w,b}{\text{minimize }} J(w,b)$$
 
+# Gradient descent
+
+Gradient descent is used to minimize any function that have more than two parameters.
+
+- Goal: We want to find the lowest point of a function, where errors are minimized.
+- Going Downhill: Imagine standing on a hill and wanting to reach the bottom. Gradient descent helps us go down the hill in the fastest way.
+- Finding the Slope: We calculate the slope of the hill where we are. The slope tells us which direction to move to go down.
+- Small Steps: We take small steps downhill. These steps are called the "learning rate." If steps are too big, we might miss the goal; if too small, we go slowly.
+- Repeat: We keep calculating the slope and moving down in steps until we reach close to the bottom.
+- Result: Once we are near the lowest point, we stop. This is the best solution we were looking for.
+
 
 # Refs
 - (https://builtin.com/machine-learning/cost-function)
