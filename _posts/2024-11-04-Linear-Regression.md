@@ -29,13 +29,17 @@ x (feature) --> learning algorithm / function (model) --> y (prediction)
 Linear function / Linear regression with one variable / Univariate linear regression
 f(X)=wx+b
 
-# Cost function / Squared error cost function
+# Cost function / Squared error cost function / Mean Squared Error (MSE)
 
 The cost function is the difference between our estimated value and the actual value on the line. The smaller this difference is, the closer our estimates will be to reality. The graph below will better understand what we mean.
 
 $$J(w,b) = {1 \over 2m} {\sum_{i=1}^m } \left( ŷ^i-y^i  \right)^2$$
 
 where:
+- i =  index of sample
+- ŷ =  predicted value
+- y =  expected value
+- m =  number of samples in the data set
 - $$(ŷ-y)$$ is called error and 
 - $$(ŷ^i-y^i)$$ error for a specific point.
 - Above cost function sums the all differences starting from 1st input to the $$(m^th$$ input to calculate the **total** square error.
@@ -46,6 +50,12 @@ We calculate the **average** square error by dividing it to m (or more commanly 
 Our goal is to minimizing the cost function :
 
 $$\underset{w,b}{\text{minimize }} J(w,b)$$
+
+
+# Refs
+- (https://builtin.com/machine-learning/cost-function)
+- (https://www.kaggle.com/code/mwaseem75/cost-function-for-linear-regression)
+- (https://medium.com/@yennhi95zz/3-understanding-the-cost-function-in-linear-regression-for-machine-learning-beginners-ec9edeecbdde)
 
 # Out of the concept
 Following page gives a great summary of MathJax library which is inherently supported by markdown lang of github:
