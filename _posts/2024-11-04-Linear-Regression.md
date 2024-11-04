@@ -79,10 +79,14 @@ above calculations for both w and b should be simultaneously (need to change the
     - if result of derivative is positive (positive slope) w decreases
     - if result of derivative is negative (negative slope) w increases
 
-## Choise of learning rate 
-- if α is too small ... > slow to reach minimum
-- if α is too large ... > overshoot, might never reach to minimum
 
+## Choise of learning rate 
+
+- if α is too small ===> slow to reach minimum
+- if α is too large ===> overshoot, might never reach to minimum
+- when the function reach to local mimimum ===> the slope (and therefore the derivative of the function) becomes zero
+- multiplying the learning rate with zero ===> does nothing once reached to mimimum & keeps it on the local minimum level
+- **As we approach the local minimum, the derivative automatically gets smaller. And that means the update steps also automatically gets smaller. Even if the learning rate alpha is kept at some fixed value.**
 
 # Refs
 - https://builtin.com/machine-learning/cost-function
