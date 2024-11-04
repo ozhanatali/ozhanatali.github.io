@@ -35,7 +35,11 @@ The cost function is the difference between our estimated value and the actual v
 
 $$J(w,b) = {1 \over 2m} {\sum_{i=1}^m } \left( ŷ^i-y^i  \right)^2$$
 
-
+where:
+- $$(ŷ-y)$$ is called error and 
+- $$(ŷ^i-y^i)$$ error for a specific point.
+- Above cost function sums the all differences starting from 1st input to the $$(m^th$$ input to calculate the **total** square error.
+We calculate the **average** square error by dividing it to m (or more commanly 2m).
 
 # Out of the concept
 Following page gives a great summary of MathJax library which is inherently supported by markdown lang of github:
