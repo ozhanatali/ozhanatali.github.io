@@ -62,11 +62,25 @@ Gradient descent is used to minimize any function that have more than two parame
 - Repeat: We keep calculating the slope and moving down in steps until we reach close to the bottom.
 - Result: Once we are near the lowest point, we stop. This is the best solution we were looking for.
 
+repeat until convergence (local minimum where the parameters w and b no longer change much with each additional step):
+
+$$ w=w-α \left({d\over dw}  J(w,b)\right)  $$
+$$ b=b-α \left({d\over dw}  J(w,b)\right)  $$
+
+where
+- α = learning rate
+- d/dw = derivative of..
+
+above calculations for both w and b should be simultaneously (need to change them both together although they effect each other).
+- DO NOT update b or w in the function and then update the next
+- DO together by assigning some temproray variable
+
 
 # Refs
-- (https://builtin.com/machine-learning/cost-function)
-- (https://www.kaggle.com/code/mwaseem75/cost-function-for-linear-regression)
-- (https://medium.com/@yennhi95zz/3-understanding-the-cost-function-in-linear-regression-for-machine-learning-beginners-ec9edeecbdde)
+- https://builtin.com/machine-learning/cost-function
+- https://www.kaggle.com/code/mwaseem75/cost-function-for-linear-regression
+- https://medium.com/@yennhi95zz/3-understanding-the-cost-function-in-linear-regression-for-machine-learning-beginners-ec9edeecbdde
+- [Gradient descent Wiki Page](https://en.wikipedia.org/wiki/Gradient_descent)
 
 # Out of the concept
 Following page gives a great summary of MathJax library which is inherently supported by markdown lang of github:
