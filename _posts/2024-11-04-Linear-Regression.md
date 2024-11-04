@@ -43,6 +43,8 @@ We calculate the **average** square error by dividing it to m (or more commanly 
 
 # Goal of linear regression
 
+Our goal is to minimizing the cost function :
+
 $$\underset{w,b}{\text{minimize }} J(w,b)$$
 
 # Out of the concept
