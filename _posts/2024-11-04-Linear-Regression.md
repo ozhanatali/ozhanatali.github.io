@@ -33,7 +33,7 @@ f(X)=wx+b
 
 The cost function is the difference between our estimated value and the actual value on the line. The smaller this difference is, the closer our estimates will be to reality. The graph below will better understand what we mean.
 
-$$ J(w,b) = {1 \over 2m} {\sum\_{i=1}^m } \left( ŷ^i-y^i  \right)^2 $$
+$$J(w,b) = {1 \over 2m} {\sum\_{i=1}^m } \left( ŷ^i-y^i  \right)^2$$
 
 
 
