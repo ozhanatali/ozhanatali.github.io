@@ -88,6 +88,12 @@ above calculations for both w and b should be simultaneously (need to change the
 - multiplying the learning rate with zero ===> does nothing once reached to mimimum & keeps it on the local minimum level
 - **As we approach the local minimum, the derivative automatically gets smaller. And that means the update steps also automatically gets smaller. Even if the learning rate alpha is kept at some fixed value.**
 
+<br/>
+## Choise of learning rate 
+- a **squared error cost function with linear regression**, the cost function does not and will never have multiple local minima
+- a **convex function** is of bowl-shaped function and it cannot have any local minima other than the single global minimum.
+- When you implement gradient descent on a convex function, one nice property is that so long as you're learning rate is chosen appropriately, it will always converge to the global minimum.
+
 # Refs
 - https://builtin.com/machine-learning/cost-function
 - https://www.kaggle.com/code/mwaseem75/cost-function-for-linear-regression
