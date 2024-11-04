@@ -64,9 +64,10 @@ Gradient descent is used to minimize any function that have more than two parame
 
 repeat until convergence (local minimum where the parameters w and b no longer change much with each additional step):
 
-$$ w=w-α \left({d\over dw}  J(w,b)\right)  $$
+$$ w=w-α \left(\frac{\partial}{\partial w} \quad J(w,b)\right)  $$
 
-$$ b=b-α \left({d\over dw}  J(w,b)\right)  $$
+$$ b=b-α \left(\frac{\partial}{\partial w} \quad J(w,b)\right)  $$
+
 
 where
 - α = learning rate
