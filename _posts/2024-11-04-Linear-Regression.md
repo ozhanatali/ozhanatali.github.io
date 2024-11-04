@@ -75,6 +75,13 @@ where
 above calculations for both w and b should be simultaneously (need to change them both together although they effect each other).
 - DO NOT update b or w in the function and then update the next
 - DO together by assigning some temproray variable
+- α (learning rate) is always positive. Derivative is used to determine the descent direction:
+    - if result of derivative is positive (positive slope) w decreases
+    - if result of derivative is negative (negative slope) w increases
+
+## Choise of learning rate 
+- if α is too small ... > slow to reach minimum
+- if α is too large ... > overshoot, might never reach to minimum
 
 
 # Refs
