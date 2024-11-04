@@ -79,7 +79,7 @@ above calculations for both w and b should be simultaneously (need to change the
     - if result of derivative is positive (positive slope) w decreases
     - if result of derivative is negative (negative slope) w increases
 
-
+<br/>
 ## Choise of learning rate 
 
 - if α is too small ===> slow to reach minimum
