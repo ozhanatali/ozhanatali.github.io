@@ -15,6 +15,12 @@ $$ \mathit f_{w,b}(x) = w_{1} x_{1} + w_{2} x_{2} + ... +  w_{n} x_{n} + \beta_{
 
 vectors:
 
-  $$ \vec{w} = [w_{1} w_{2} w_{3} ... w_{n} ] $$
+$$ \vec{w} = [w_{1} w_{2} w_{3} ... w_{n} ] $$
   
-  $$ \vec{x} = [x_{1} x_{2} x_{3} ... x_{n} ] $$
+$$ \vec{x} = [x_{1} x_{2} x_{3} ... x_{n} ] $$
+
+$$ \mathit f_{\vec{w},b}(\vec{x}) = \vec{w} . \vec{x}  + \beta =  w_{1} x_{1} + w_{2} x_{2} + ... +  w_{n} x_{n} + \beta_{0} $$ 
+
+# Notation
+
+$\vec{x}_{1} ^ 4$  refers to the first feature (first column in the table) of the fourth training example (fourth row in the table)
