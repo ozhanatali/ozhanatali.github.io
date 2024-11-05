@@ -10,7 +10,9 @@ konum: İstanbul
 # Simple Linear regression (SLR)
 
 Linear regression model is a particular type of supervised learning model.
+
 In statistics, simple linear regression (SLR) is a linear regression model with a single explanatory variable.
+
 Linear regression is one example of a regression model. But there are other models for addressing regression problems too.
 In contrast with the regression model, the other most common type of supervised learning model is called a classification model.
 In classification, there are only a small number of possible outputs, whereas in regression, there are infinitely many possible numbers that the model could output.
