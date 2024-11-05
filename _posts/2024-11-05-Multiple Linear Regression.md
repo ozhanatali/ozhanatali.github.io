@@ -64,3 +64,16 @@ How to:
 - https://medium.com/@punya8147_26846/understanding-feature-scaling-in-machine-learning-fe2ea8933b66
 - https://www.geeksforgeeks.org/ml-feature-scaling-part-1/
 - https://en.wikipedia.org/wiki/Feature_scaling
+
+
+# Checking gradient descent for convergence
+
+Assuma a grapgh with J(w,b) on Y axis and #iterations on X axis.
+On each iteration the J(w,b)=total cost is expected to decrease materially.
+After a many trial/iterations if the decrease becomes immaterial or flat... then it means you need to change the learning rate.
+
+**Automatic convergence test:**
+
+Let Ɛ (epsilon) be 0.001.
+If J(w,b) decreases by <=Ɛ in one iteration, declare convergence. (get closer to global minimum)
+
