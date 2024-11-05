@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multiple Linear Regression (MLR)
+title: Logistic Regression & Decision Boundary
 categories: AI
 tags: AI Artificial+Intelligence
 konum: İstanbul
