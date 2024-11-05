@@ -91,3 +91,17 @@ Try...
 Using intuition to design new features, by transforming or combining original features.
 (ie.. x1=length, x2=width, then x3 might be=area)
 
+# (Polynomial functions)[https://en.wikipedia.org/wiki/List_of_mathematical_functions#:~:text=Linear%20function%3A%20First%20degree%20polynomial,Quartic%20function%3A%20Fourth%20degree%20polynomial.] 
+
+Polynomials: Can be generated solely by addition, multiplication, and raising to the power of a positive integer.
+- Constant function: polynomial of degree zero, graph is a horizontal straight line
+- Linear function: First degree polynomial, graph is a straight line.
+- Quadratic function: Second degree polynomial, graph is a parabola.
+- Cubic function: Third degree polynomial.
+- Quartic function: Fourth degree polynomial.
+- Quintic function: Fifth degree polynomial.
+
+# Polynomial regression
+
+
+
