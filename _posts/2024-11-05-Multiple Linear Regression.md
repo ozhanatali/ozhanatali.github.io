@@ -49,3 +49,14 @@ f=np.dot(w,x)+b
 </code></br>
 Numpy DOT functioın uses parallel calculation to accelarate the procedures both on CPU or GPU.
 
+# Feature scaling
+
+Feature scaling is a method used to normalize the range of independent variables or features of data. In data processing, it is also known as data normalization and is generally performed during the data preprocessing step.
+
+when you have different features that take on very different ranges of values, it can cause gradient descent to run slowly but re scaling the different features so they all take on comparable range of values. because speed, upgrade and dissent significantly. 
+
+
+- https://www.kaggle.com/code/aimack/complete-guide-to-feature-scaling
+- https://medium.com/@punya8147_26846/understanding-feature-scaling-in-machine-learning-fe2ea8933b66
+- https://www.geeksforgeeks.org/ml-feature-scaling-part-1/
+- https://en.wikipedia.org/wiki/Feature_scaling
