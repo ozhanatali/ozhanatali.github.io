@@ -69,7 +69,8 @@ How to:
 
 # Checking gradient descent for convergence
 
-Assuma a grapgh with J(w,b) on Y axis and #iterations on X axis.
+**Learning Curve:** Assume a grapgh with J(w,b)/loss function/orcross-validation score etc on Y axis and #iterations on X axis.
+![image](https://upload.wikimedia.org/wikipedia/commons/2/24/Learning_Curves_%28Naive_Bayes%29.png)
 On each iteration the J(w,b)=total cost is expected to decrease materially.
 After a many trial/iterations if the decrease becomes immaterial or flat... then it means you need to change the learning rate.
 
