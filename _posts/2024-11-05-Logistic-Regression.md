@@ -19,6 +19,9 @@ $$ \sigma : \mathbb{R} \rightarrow (0,1) $$
 
 $$ \sigma(z) = \frac{1} {1 + e^{-z}} $$
 
+# Decision boundary
+
+Usually if >=0.5 it is considered as 1 , else 0. 
 
 # Out of the scope ref's
 - [Classical ML Equations in LaTeX](https://blmoistawinde.github.io/ml_equations_latex/)
