@@ -66,7 +66,7 @@ repeat until convergence (local minimum where the parameters w and b no longer c
 
 $$ w=w-α \left(\frac{\partial}{\partial w} \quad J(w,b)\right)  $$
 
-$$ b=b-α \left(\frac{\partial}{\partial w} \quad J(w,b)\right)  $$
+$$ b=b-α \left(\frac{\partial}{\partial b} \quad J(w,b)\right)  $$
 
 
 where
