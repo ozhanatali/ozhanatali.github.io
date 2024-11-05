@@ -47,5 +47,5 @@ Pyhton code usign **Numpy DOT functioın**:
 <code>
 f=np.dot(w,x)+b
 </code></br>
-
+Numpy DOT functioın uses parallel calculation to accelarate the procedures both on CPU or GPU.
 
