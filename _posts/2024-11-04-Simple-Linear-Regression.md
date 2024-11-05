@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simple-Linear-Regression-(SLR)
+title: Simple Linear Regression (SLR)
 categories: AI
 tags: AI Artificial+Intelligence
 konum: İstanbul
