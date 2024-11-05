@@ -80,6 +80,22 @@ above calculations for both w and b should be simultaneously (need to change the
     - if result of derivative is positive (positive slope) w decreases
     - if result of derivative is negative (negative slope) w increases
 
+# Types of Gradient descent
+
+**1. Batch gradient descent (BGD)**
+
+The term batch gradient descent refers to the fact that on every step of gradient descent, we're looking at all of the training examples, instead of just a subset of the training data. (+)Stability (+)Accuracy (-)Performance
+
+**2. Stochastic Gradient Descent (SGD)**
+
+Stochastic Gradient Descent (SGD) is a simplified version of Gradient Descent (GD) that addresses some of its challenges. In SGD, the gradient is computed for only one randomly selected partition of the shuffled dataset during each iteration, instead of using the entire dataset. 
+
+**3. Mini-Batch Gradient Descent**
+
+Data is splitted into small batches and then compute loss for each. The weights are updated after each batch.
+
+
+
 <br/>
 ## Choise of learning rate 
 
@@ -100,6 +116,8 @@ above calculations for both w and b should be simultaneously (need to change the
 - https://www.kaggle.com/code/mwaseem75/cost-function-for-linear-regression
 - https://medium.com/@yennhi95zz/3-understanding-the-cost-function-in-linear-regression-for-machine-learning-beginners-ec9edeecbdde
 - [Gradient descent Wiki Page](https://en.wikipedia.org/wiki/Gradient_descent)
+- https://medium.com/@jaleeladejumo/gradient-descent-from-scratch-batch-gradient-descent-stochastic-gradient-descent-and-mini-batch-def681187473
+- https://deepgram.com/ai-glossary/batch-gradient-descent
 
 # Out of the concept
 Following page gives a great summary of MathJax library which is inherently supported by markdown lang of github:
