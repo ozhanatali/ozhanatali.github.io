@@ -24,3 +24,4 @@ $$ \sigma(z) = \frac{1} {1 + e^{-z}} $$
 - [Classical ML Equations in LaTeX](https://blmoistawinde.github.io/ml_equations_latex/)
 - [LaTeX Formal Methods Reference](https://www.cs.put.poznan.pl/ksiek/latexmath.html)
 - [Arrow Symbols in LaTeX](https://www.geeksforgeeks.org/arrow-symbols-in-latex/)
+- [Logistic regression WIKI](https://en.wikipedia.org/wiki/Logistic_regression)
