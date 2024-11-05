@@ -87,5 +87,7 @@ But if it is too small, #iteratiosn increases, takes longer time, consumes more 
 Try...
 
 
-
+# Feature engineering
+Using intuition to design new features, by transforming or combining original features.
+(ie.. x1=length, x2=width, then x3 might be=area)
 
