@@ -55,6 +55,10 @@ Feature scaling is a method used to normalize the range of independent variables
 
 when you have different features that take on very different ranges of values, it can cause gradient descent to run slowly but re scaling the different features so they all take on comparable range of values. because speed, upgrade and dissent significantly. 
 
+How to:
+1. Max scaling (dividing to max value)
+2. Mean normalization (dividing to mean value)
+3. Z-score normalization (dividing to standard deviation)
 
 - https://www.kaggle.com/code/aimack/complete-guide-to-feature-scaling
 - https://medium.com/@punya8147_26846/understanding-feature-scaling-in-machine-learning-fe2ea8933b66
