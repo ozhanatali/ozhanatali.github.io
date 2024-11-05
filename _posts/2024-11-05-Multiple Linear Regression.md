@@ -79,3 +79,13 @@ After a many trial/iterations if the decrease becomes immaterial or flat... then
 Let Ɛ (epsilon) be 0.001.
 If J(w,b) decreases by <=Ɛ in one iteration, declare convergence. (get closer to global minimum)
 
+# Choosing the learning rate
+
+With a small enough α, J(w,b) should decrease on every iteration.
+1st select and really small learning rate and check if the cost decreases-- otherwise there might be a coding bug.
+But if it is too small, #iteratiosn increases, takes longer time, consumes more source.
+Try...
+
+
+
+
