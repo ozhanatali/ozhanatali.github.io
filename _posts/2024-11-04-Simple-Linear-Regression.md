@@ -114,6 +114,10 @@ Data is splitted into small batches and then compute loss for each. The weights 
 - a **convex function** is of bowl-shaped function and it cannot have any local minima other than the single global minimum.
 - When you implement gradient descent on a convex function, one nice property is that so long as you're learning rate is chosen appropriately, it will always converge to the global minimum.
 
+## Normal equation 
+Normal equation is an alternative to gradient descent -only for lienar regression which works slower.
+
+
 # Refs
 - https://builtin.com/machine-learning/cost-function
 - https://www.kaggle.com/code/mwaseem75/cost-function-for-linear-regression
