@@ -13,4 +13,10 @@ konum: İstanbul
 - If you plot this logistic regression equation, you will get an **S-curve** as shown below:
 ![image](https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Logistic-curve.svg/1280px-Logistic-curve.svg.png)
 
+# Definition of the logistic function:
+
+$$ \sigma : \mathbb{R} \rightarrow (0,1) $$
+
+$$ \sigma(z) = \frac{1} {1 + e^{-z}} $$
+
 
