@@ -101,7 +101,4 @@ Polynomials: Can be generated solely by addition, multiplication, and raising to
 - Quartic function: Fourth degree polynomial.
 - Quintic function: Fifth degree polynomial.
 
-# Polynomial regression
-
-
 
