@@ -60,7 +60,7 @@ How to:
 2. Mean normalization (dividing to mean value)
 3. Z-score normalization (dividing to standard deviation)
 
-
+</br>
 - https://www.kaggle.com/code/aimack/complete-guide-to-feature-scaling
 - https://medium.com/@punya8147_26846/understanding-feature-scaling-in-machine-learning-fe2ea8933b66
 - https://www.geeksforgeeks.org/ml-feature-scaling-part-1/
