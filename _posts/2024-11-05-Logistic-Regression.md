@@ -20,3 +20,7 @@ $$ \sigma : \mathbb{R} \rightarrow (0,1) $$
 $$ \sigma(z) = \frac{1} {1 + e^{-z}} $$
 
 
+# Out of the scope ref's
+- [Classical ML Equations in LaTeX](https://blmoistawinde.github.io/ml_equations_latex/)
+- [LaTeX Formal Methods Reference](https://www.cs.put.poznan.pl/ksiek/latexmath.html)
+- [Arrow Symbols in LaTeX](https://www.geeksforgeeks.org/arrow-symbols-in-latex/)
